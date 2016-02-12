@@ -1,3 +1,7 @@
+*{
+    font-size: 18pt;
+}
+
 h1 {
     font-size: 30pt;
     font: bold;
@@ -5,20 +9,17 @@ h1 {
 }
 
 hr{
-    margin: 5%;
+    width: 500px;
     color: black;
 }
 
 p{
-    margin-left:  7%;
-}
-
-*{
-    font-size: 17pt;
+    font-size: 18pt;
+    padding-left: 60px;  
 }
 
 ul{
-    margin-left: 8%
+   padding-left: 90px;
 }
 
 .bg{
@@ -26,12 +27,15 @@ ul{
 }
 
 .block{
-    width: 21cm;
-    height: 29.7cm;
+    width: 595px;
+    height: 842px;
     background-color: white;
-    margin: 0% 25% 0%;
+    margin: 0 auto;
+}
 
-}
 .img{
-    text-align: center;
+    margin: 0 auto;
+    width: 150px;
 }
+
+
