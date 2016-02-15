@@ -1,0 +1,63 @@
+.bg {
+    background: white;
+}
+
+.mainBlock {
+    width: 1280px;
+    height: 1024px;
+    background: url(../img/backgound.jpg);
+    margin: 0 auto;
+}
+
+#menu {
+    padding-top: 413px;
+    padding-left: 150px;
+	margin: 0;
+	font-size: 14px;
+    color: #ffffff;
+}
+
+
+#menu li {
+    list-style: none;
+    float: left;
+    height: 23px;
+	width: 150px;
+	text-align: center;
+	background: #343434;
+	position: relative;
+	padding-top: 12px;
+    margin-right: -8px;
+}
+
+
+#menu li ul {
+  list-style: none;
+	padding: 0;
+	margin: 0;
+	width: 150px;
+	display: none;
+	position: absolute;
+	left: 0;
+	top: 45px;
+    
+}
+
+#menu li ul li {
+	float: none;
+	height: 33px;
+	margin: -10px;
+	width: 150px;
+    margin-left: 25px;
+    padding-left: 10px;
+	text-align: left;
+	background: #343434;
+	}
+
+#menu li:hover ul, #menu li.jshover ul {
+	display: block;
+	}
+
+#menu li:hover, #menu li.jshover {
+	background: #343434;
+	}
