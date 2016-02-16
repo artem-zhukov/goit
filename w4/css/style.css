@@ -1,19 +1,19 @@
 .bg {
     background: white;
+    background: url(../img/back.jpg);
 }
 
 .mainBlock {
-    width: 1280px;
-    height: 1024px;
-    background: url(../img/backgound.jpg);
+    width: 1000px;
+    height: 1000px;
+    background: white;
+    
     margin: 0 auto;
     overflow: hidden;
 }
 
 #menu {
-    padding-top: 413px;
-    padding-left: 150px;
-	margin: 0;
+    margin: -2px;
 	font-size: 14px;
     color: #ffffff;
 }
@@ -31,7 +31,6 @@
     margin-right: -8px;
 }
 
-
 #menu li ul {
   list-style: none;
 	padding: 0;
@@ -41,7 +40,6 @@
 	position: absolute;
 	left: 0;
 	top: 45px;
-    
 }
 
 #menu li ul li {
@@ -67,22 +65,25 @@
     width: 210px;
     float: left;
     background: #edeef0;
-    padding-bottom: 381px;
-    margin-left: 153px;
+    padding-bottom: 440px;
+    
 }
 
 .rightColumn {
     width: 210px;
-    float: left;
+    float: right;
     background: #edeef0;
-    padding-bottom: 100px;
-    margin-left: 579px;
+    padding-bottom: 160px;
+    margin-right: 0px;
 }
 
 p {
     font-size: 14px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 22px;
     line-height: 20px
+}
+
+img{
+    margin-top: 177px;
 }
 
