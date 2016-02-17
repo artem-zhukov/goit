@@ -7,7 +7,6 @@
     width: 1000px;
     height: 1000px;
     background: white;
-    
     margin: 0 auto;
     overflow: hidden;
 }
@@ -75,15 +74,51 @@
     background: #edeef0;
     padding-bottom: 160px;
     margin-right: 0px;
+    
+}
+
+.title {
+    color: grey;
+    text-align: center;
+     font-size: 18px;
+    line-height: 20px;
+    font-weight: bold;
+}
+
+.footer p {
+    text-align: center;
+    color: white;
+    font-size: 12px;
+}
+
+.photo a {
+    display: block;
+    position: relative;
+    
+}
+
+.photo img {
+    position: absolute;
+    margin-top: 110px;
+    margin-left: 917px;
+}
+
+.photo span {
+    position: absolute;
+    display: block;
+    font-size: 12px;
+    margin-left: 910px;
+    margin-top: 155px;
+    cursor: pointer;
 }
 
 p {
     font-size: 14px;
     padding-left: 22px;
-    line-height: 20px
+    line-height: 20px;
 }
 
-img{
+img {
     margin-top: 177px;
 }
 
