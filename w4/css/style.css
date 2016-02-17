@@ -1,6 +1,6 @@
 .bg {
     background: white;
-    background: url(../img/back.jpg);
+    background: url(../img/backgound.jpg);
 }
 
 .mainBlock {
@@ -16,7 +16,6 @@
 	font-size: 14px;
     color: #ffffff;
 }
-
 
 #menu li {
     list-style: none;
@@ -64,8 +63,7 @@
     width: 210px;
     float: left;
     background: #edeef0;
-    padding-bottom: 440px;
-    
+    padding-bottom: 440px;    
 }
 
 .rightColumn {
@@ -74,7 +72,6 @@
     background: #edeef0;
     padding-bottom: 160px;
     margin-right: 0px;
-    
 }
 
 .title {
@@ -91,25 +88,31 @@
     font-size: 12px;
 }
 
-.photo a {
-    display: block;
-    position: relative;
-    
+.flags ul {
+    position: absolute;
+    margin-top: -130px;
+    margin-left: 570px;    
 }
 
-.photo img {
-    position: absolute;
-    margin-top: 110px;
-    margin-left: 917px;
-}
-
-.photo span {
-    position: absolute;
-    display: block;
+.flags li {
+    float: right;
+    list-style: none;
     font-size: 12px;
-    margin-left: 910px;
-    margin-top: 155px;
-    cursor: pointer;
+    width: 70px;
+    text-align: center;
+}
+
+.header img {
+    position: relative;
+     margin-top: 12px;
+}
+
+.header p {
+    position: absolute;
+    font-size: 12px;
+    color: #128aa7;
+    margin-top: -170px;
+    padding-left: 830px;
 }
 
 p {
@@ -119,6 +122,5 @@ p {
 }
 
 img {
-    margin-top: 177px;
+    margin-top: -50px;
 }
-
