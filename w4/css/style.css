@@ -1,6 +1,5 @@
 .bg {
-    background: white;
-    background: url(../img/backgound.jpg);
+    background: url(../img/backgound.jpg)
 }
 
 .mainBlock {
@@ -91,20 +90,21 @@
 .flags ul {
     position: absolute;
     margin-top: -130px;
-    margin-left: 570px;    
+    margin-left: 550px;    
 }
 
 .flags li {
     float: right;
     list-style: none;
+    text-align: center;
     font-size: 12px;
     width: 70px;
-    text-align: center;
 }
 
 .header img {
-    position: relative;
-     margin-top: 12px;
+    position: relative; 
+    margin-top: 12px;
+    padding-left: 20px;
 }
 
 .header p {
@@ -112,7 +112,7 @@
     font-size: 12px;
     color: #128aa7;
     margin-top: -170px;
-    padding-left: 830px;
+    padding-left: 810px;
 }
 
 p {
