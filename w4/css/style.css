@@ -101,6 +101,11 @@
     width: 70px;
 }
 
+.flags li img{
+    float: right;
+    margin-right: 13px;
+}
+
 .header img {
     position: relative; 
     margin-top: 12px;
