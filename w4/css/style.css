@@ -81,29 +81,50 @@
     font-weight: bold;
 }
 
-.footer p {
-    text-align: center;
-    color: white;
-    font-size: 12px;
-}
-
-.flags ul {
+.flags {
+    list-style: none;
     position: absolute;
-    margin-top: -130px;
-    margin-left: 550px;    
+    margin-top: -120px;
+    margin-left: 550px;  
 }
 
 .flags li {
-    float: right;
-    list-style: none;
-    text-align: center;
-    font-size: 12px;
-    width: 70px;
+    float: left;
 }
 
-.flags li img{
-    float: right;
-    margin-right: 13px;
+.flags li a {
+    display: block;
+    text-align: center;
+    background-position: center top;
+    background-repeat: no-repeat;
+    padding-top: 50px;
+    font-size: 12px;
+    width: 70px;
+    height: 20px;
+}
+
+.flags .maldives a {
+    background-image: url(../img/maldives.jpg);
+}
+
+.flags .sri-lanka a {
+    background-image: url(../img/sri-lanka.jpg);
+}
+
+.flags .butan a {
+    background-image: url(../img/butan.jpg);
+}
+
+.flags .tibet a {
+    background-image: url(../img/tibet.jpg);
+}
+
+.flags .nepal a {
+    background-image: url(../img/nepal.jpg);
+}
+
+.flags .india a {
+    background-image: url(../img/india.jpg);
 }
 
 .header img {
