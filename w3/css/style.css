@@ -8,38 +8,36 @@
     background-color: #ffffff;
     margin: 0 auto;
     border: 1px solid #e7e7e7;
+    box-shadow:
+        0 0 1px 0 rgba(0, 0, 0, .1),
+        0 0 1px 0 rgba(0, 0, 0, .1),
+        0 0 40px 0 rgba(0, 0, 0, .1);
 }
 
-.top {
-     margin-left: 50px;
-     margin-right: 50px;
-}
-
-.top span {
-    height: 130px;
-    line-height: 130px;
-    font-size: 60px;
+.mainBlock img {
+    margin-left: 50px;
+    margin-top: 40px;
 }
 
 .topMenu {
-    display: inline-block;
-    background:  url(../img/head.jpg);
+    list-style: none;
     width: 965px;
-    height: 42px;
-    margin-left: 50px; 
+    height: 42px;   
+    background:  url(../img/head.jpg);
+    margin-left: 50px;
+    margin-top: 40px;
 }
 
-.topMenu span {
-    padding-left: 20px;
-    padding-right: 50px;
-    color: #adacac;
-    font-size: 20px;
-}
+.topMenu li {
+    float: left;
+    padding: 13px;
+    padding-left:  20px;
+    padding-right: 40px;
+  }
 
-.topMenu span:hover {
-   background-color: #2f2f2f;
+.topMenu li:hover {
+   background-color: #2f2f2f; 
 }
-
 
 .content {
     float: left;
@@ -50,16 +48,27 @@
     margin-left: 50px;
 }
 
-.table table {
-    border: 2px solid #c8c8c8;
-    font-size: 18px;
+.leftMenu {
+    float: left;
     width: 240px;
     height: 240px;
 }
 
+.leftMenu li {
+    display: block;
+    border: 2px solid #c8c8c8;
+    color: #787878;
+    padding: 15px;
+    margin-top: -2px;    
+}
+
+.leftMenu li:hover {
+    padding-left: 50px;
+    background: #f9f9f9;
+}
+
 .downMenu {
-    font: left;
-    display: inline-block;
+    float: left;
     background: #e1e1e1;
     width: 665px;
     height: 42px;
@@ -67,31 +76,29 @@
     margin-top: 60px;
 }
 
-.downMenu span {
-    padding-left: 20px;
-    padding-right: 50px;
-    color: #2c2c2c;
-    font-size: 20px; 
+.downMenu li{
+    float: left;
+    padding: 13px;
+    padding-left:  20px;
+    padding-right: 40px;
 }
 
-.downMenu span:hover {
+.downMenu li:hover{
     text-decoration: underline;
 }
 
 .tradeMark {
     display: inline-block;
     background: #e1e1e1;
-    margin-left: -5px;
-    width: 305px;
-    height: 42px;
     margin-top: 60px;
+    width: 274px;
+    height: 16px;
+    padding: 13px;
 }
 
 .tradeMark span {
     color: #2c2c2c;
-    font-size: 20px;
     padding-left: 70px;
-
 }
 
 .pic {
@@ -107,18 +114,6 @@
     display: inline-block;
     line-height: 1.2;
     vertical-align: middle;
-}
-
-td {
-    padding-left: 20px;
-    border: 2px solid #c8c8c8;
-    vertical-align: middle;
-    color: #787878;
-}
-
-td:hover {
-    padding-left: 50px;
-    background: #f9f9f9;
 }
 
 p {
