@@ -1,4 +1,4 @@
-.bg {
+body {
     background: #f9f9f9;
 }
 
@@ -23,7 +23,7 @@
     list-style: none;
     width: 965px;
     height: 42px;   
-    background:  url(../img/head.jpg);
+    background:  url(../img/menuHeadBackground.png);
     margin-left: 50px;
     margin-top: 40px;
 }
@@ -31,6 +31,7 @@
 .topMenu li {
     float: left;
     padding: 13px;
+    color: #e5e5e5;
     padding-left:  20px;
     padding-right: 40px;
   }
@@ -39,7 +40,7 @@
    background-color: #2f2f2f; 
 }
 
-.content {
+.sidebar {
     float: left;
     margin-top: 40px;
     margin-right: 48px;
@@ -56,10 +57,10 @@
 
 .leftMenu li {
     display: block;
-    border: 2px solid #c8c8c8;
+    border: 1px solid #c8c8c8;
     color: #787878;
     padding: 15px;
-    margin-top: -2px;    
+    margin-top: -1px;    
 }
 
 .leftMenu li:hover {
@@ -71,7 +72,7 @@
     float: left;
     background: #e1e1e1;
     width: 665px;
-    height: 42px;
+    height: 40px;
     margin-left: 50px;
     margin-top: 60px;
 }
@@ -93,7 +94,7 @@
     margin-top: 60px;
     width: 274px;
     height: 16px;
-    padding: 13px;
+    padding: 12px;
 }
 
 .tradeMark span {
@@ -101,16 +102,16 @@
     padding-left: 70px;
 }
 
-.pic {
+.content {
     margin-top: 40px;
     width: 675px;
     line-height: 400px;
     text-align:center;
     overflow:auto;
-    border: 2px solid #c8c8c8;
+    border: 1px solid #c8c8c8;
 }
 
-.pic img {
+.content img {
     display: inline-block;
     line-height: 1.2;
     vertical-align: middle;
