@@ -1,0 +1,146 @@
+@font-face {
+    font-family: 'Helvetica Neue Regular';
+    src: url('../fonts/fonhelveticaneue-thin-webfont.eot');
+    src: url('../fonts/fonhelveticaneue-thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/fonhelveticaneue-thin-webfont.woff2') format('woff2'),
+         url('../fonts/fonhelveticaneue-thin-webfont.woff') format('woff'),
+         url('../fonts/fonhelveticaneue-thin-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+p, li {
+    font-family: "Helvetica Neue Regular", Arial;
+}
+
+.main {
+    width: 1215px;
+    height: 1064px;
+    margin: 0 auto;
+}
+
+.main img {
+    position: absolute;
+}
+
+.header {
+    height: 35px;
+    width: 1215px;
+    background: #085596;
+}
+
+.menu {
+    list-style: none;
+    position: absolute;
+    margin-left: 380px;
+    height: 35px;
+}
+
+.enter {
+    margin-left: 580px;
+    background: url(../img/headerBack.png);
+    width: 230px;
+    height: 35px;
+    color: white;
+}
+
+.enter .entrar li {
+    text-decoration: underline;
+}
+
+.menu li {
+    float: left;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.windowInput {
+    position:relative;
+    padding-top: 30px;
+    width: 560px;
+    height: 610px;
+    background-color: RGBA(0,0,0,0.63);
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 10px; 
+}
+
+.windowInput header p {
+    color: white;
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+
+.windowInput content {
+    display: block;
+    padding:20px;
+    color: #666666;
+    font-size: 15px;
+
+}
+
+.windowInput content .table {
+    margin: 0 auto;
+}
+
+.windowInput content hr {
+    border-color: #666666; 
+    box-shadow: 0 1px rgb(0,0,0);
+} 
+
+.windowInput .butLog{
+    margin-top: 30px;
+    width: 276px;
+    height: 35px;
+}
+
+.forms input{
+    margin: 10px;
+    border: 0px;
+    border-bottom: 1px solid #484948;
+    background-color: #0f0f0f;
+    color: white;
+    width: 260px;
+    height: 35px;
+    padding-left: 15px;
+}
+
+input.text:focus, password:focus {
+    border: 1px solid blue;
+    background: #1b5288;
+}
+
+.checkbox {
+    margin-left: -51px;
+}
+
+.windowInput span {
+    text-align: left;
+    padding-left: 5px;
+    color: white;
+    font-size: 15px;
+}
+
+.butCreate {
+    background-image: url(../img/ok.png);
+    border-radius: 3px;
+}
+
+.windowInput .butCreate {
+    margin-top: 20px;
+    position: relative;
+    width: 148px;
+    height: 34px;
+    border: 0px;
+    color: white;
+}
+
+.policy {
+    margin-top: 20px;
+}
+
+.policy p{
+    font-size: 12px;
+    padding-top: 5px;
+    color: #dadad9;
+}
