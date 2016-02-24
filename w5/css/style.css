@@ -14,53 +14,89 @@ p, li {
 }
 
 .main {
+    position: relative;
     width: 1215px;
     height: 1064px;
     margin: 0 auto;
 }
 
-.main img {
-    position: absolute;
-}
-
 .header {
+    position: relative;
     height: 35px;
     width: 1215px;
     background: #085596;
 }
 
 .menu {
+    position: relative;
     list-style: none;
-    position: absolute;
-    margin-left: 380px;
-    height: 35px;
+    width: 350px;
+    margin-left: 430px;
+    
 }
 
-.enter {
-    margin-left: 580px;
+.menu ul {
+    position: absolute;
+    margin-top: 3px;
+    padding-right: 5px;
+    height: 30px;
+    border-right:1px solid #56a2dc;
+}
+
+.menu li {
+    float: left;
+    height: 25px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.menu .fMenu li, a{
+    color: #56a2dc;
+    margin-top: -3px;
+}
+
+.menu .fMenu li:hover, a:hover{
+    color: white;
+    background: #4eabda;
+}
+
+.menu .secMenu {
+    border: none;
+    margin-top: 0px;
+    margin-left: 360px;
+    width: 140px;
+    color: white;
+} 
+
+.menu .secMenu img{
+    margin-top: 5px;
+    float: left;
+}
+
+.menu .thMenu {
+    margin-top: 0px;
+    margin-left: 520px;
     background: url(../img/headerBack.png);
     width: 230px;
     height: 35px;
     color: white;
 }
 
-.enter .entrar li {
+.menu .thMenu a{
+    color: white;
+}
+
+.thMenu .entrar:hover {
     text-decoration: underline;
 }
 
-.menu li {
-    float: left;
-    padding-top: 10px;
-    padding-left: 10px;
-}
-
 .windowInput {
-    position:relative;
-    padding-top: 30px;
+    position:absolute;
     width: 560px;
     height: 610px;
+    top: 227px;
+    left: 327px;
     background-color: RGBA(0,0,0,0.63);
-    margin: 0 auto;
     text-align: center;
     padding-top: 10px; 
 }
@@ -76,7 +112,6 @@ p, li {
     padding:20px;
     color: #666666;
     font-size: 15px;
-
 }
 
 .windowInput content .table {
@@ -111,7 +146,7 @@ input.text:focus, password:focus {
 }
 
 .checkbox {
-    margin-left: -51px;
+    margin-left: -46px;
 }
 
 .windowInput span {
@@ -143,4 +178,8 @@ input.text:focus, password:focus {
     font-size: 12px;
     padding-top: 5px;
     color: #dadad9;
+}
+
+a {
+    text-decoration: none;
 }
