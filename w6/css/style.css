@@ -526,7 +526,6 @@ footer content table {
 }
 
 footer content td {
-    color: #bec6c9;
     font-size: 13px;
     font-family: 'Arial Regular';
     vertical-align: middle;
@@ -535,7 +534,12 @@ footer content td {
     border-right: 1px solid #bec6c9;
 }
 
-footer content td:hover {
+footer content a{
+    color: #bec6c9;
+    text-decoration: none;
+}
+
+footer content a:hover {
     color: #52abcb;
 }
 
