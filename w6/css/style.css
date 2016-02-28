@@ -1,0 +1,549 @@
+body {
+    background:darkgray;
+}
+
+.main {
+    width: 1000px;
+    height: 1310px;
+    margin: 0 auto;
+    background: white;
+}
+
+header{
+    margin-top: -1px;
+    margin-left: 52px;
+    float:left;
+    width: 908px;
+}
+
+.contact {
+    padding-top: 22px;
+    height: 22px;
+    width: 290px;
+    float: left;
+    
+}
+.contact .phone {
+    float: left;
+    height: 22px;
+    width: 22px;
+    background: linear-gradient(to bottom, #0c3357, #1e6584);
+    border-radius: 22px;
+    text-align: center;
+}
+
+.contact .phoneNumber {
+    padding-left: 30px;
+    color: #5e696d;
+    font-size: 18px;
+    font-family: 'Arial';
+}
+
+.avtorization{
+    float: left;
+    margin-top: -25px;
+    margin-left: 307px;
+    height: 22px;
+    width: 495px;
+    padding-top: 4px;
+    background: linear-gradient(to top, #0c3357, #1f6787);
+    border-radius: 3px;
+    box-shadow: 2px 3px 3px 0px rgba(0,0,0, 0.5);
+}
+
+.avtorization .avtor {
+    float: left;
+    padding-left: 8px;
+    height: 20px;
+    width: 13px;
+}
+
+.avtorization input {
+    float: left;
+    margin-left: 3px;
+    height: 11px;
+    width: 107px;
+    font-size: 11px;
+    color: #97a2a6;
+    padding-left: 4px;
+}
+
+#pas {
+    margin-left: 5px;
+}
+
+.avtorization table {
+ float: left;
+ margin-top: 3px;
+}
+
+.avtorization a {
+    color: white;
+    text-decoration: none;
+}
+
+.avtorization td {
+    font-size: 11px;
+    padding-right: 5px;
+    padding-left: 12px;   
+}
+
+.avtorization td.enter {
+    border-right: 1px solid white;
+}
+
+.avtorization .reg {
+    padding-left: 8px;
+}
+
+.avtorization .forgetPas a{
+     padding-left: 15px; 
+     color: #bfbfbf;
+     font-size: 12px; 
+     text-decoration: underline;
+}
+
+.nav {
+    margin-top: 20px;
+    margin-left: 820px;
+    height: 19px;
+    width: 75px;
+    border: 1px solid #c1c8cb;
+    border-radius: 10px;
+    box-shadow: 0px 1px 3px 0px rgba(0,0,0, 0.5);
+}
+
+.nav img {
+    padding-left: 7px;
+}
+
+.banner {
+    margin-top: 10px;
+    margin-left: -6px;
+}
+
+content{
+    float: left;
+    height: 830px;
+    width: 911px;
+    margin-top: 3px;
+    margin-left: 45px;
+}
+
+content header {
+    margin-left: -1px;
+    height: 35px;
+    width: 911px; 
+    background: linear-gradient(to top, #010101, #4d5663);
+    border-radius: 5px;
+    border: 1px solid #2c345a;
+    box-shadow: 2px 3px 3px 0px rgba(44,52,90, 0.5);
+}
+
+content ul {
+    margin-top: 11px;
+    margin-left: 158px;
+}
+
+content li {
+    float: left;
+    margin-right: 31px;
+    font-size: 14px;
+    font-family: 'Lucida Sans Unicode';
+    color: #b1bcc0;
+}
+
+.menu a{
+    color: #929b9f;
+    font-size: 13px;
+    margin-top: -2px;
+    text-decoration: none;
+    position: relative;
+}
+
+.menu a:hover {
+    color: white;
+    padding: 3px 20px 3px 20px;
+    border-radius: 25px;
+    margin-left: -20px;
+    background: linear-gradient(to top, #0c3357, #25617b);
+}
+
+.order img {
+    float: left;
+    margin-top: -3px;
+    margin-left: 42px;
+    margin-right: 6px;
+} 
+
+.order p {
+    float: left;
+    color: #929b9f;
+    font-size: 13px;
+    margin-top: -2px;
+}
+
+.num p{
+    color: #0d5a8f;
+    font-size:13px; 
+}
+
+ .sum p{
+    margin-left: 16px;
+}
+
+.order .numSum .numSum{
+    color: #0d5a8f;
+    margin-left: 12px;
+}
+
+.search {
+    background-color: #d6d5d8;
+    height: 132px;
+    width: 897px;
+    margin-top: 46px;
+    margin-left: 6px;
+}
+
+.left {
+    float: left;
+    width: 180px;
+    height: 622px;
+    margin-top: 21px;
+}
+
+.catalogProd {
+    width: 180px;
+    height: 25px;
+    border: 1px solid #8c969a;
+    border-radius: 25px;
+    box-shadow: 1px 2px 2px 0px rgba(44,52,90, 0.5);
+}
+
+content .catalogProd p{
+    color: #114165;
+    font-size: 13px;
+}
+
+figure {
+    float: left;
+    height: 20px;
+    width: 20px;
+    background: linear-gradient(to top, #0c3357, #25617b);
+    border-radius: 25px;
+    text-align: center;
+    margin-top: 2px;
+    margin-left: 2px;
+    margin-right: 4px;
+}
+
+.left p{
+    font-family: 'Lucida Sans Unicode';
+    margin-top: 7px;
+}
+
+figure img {
+    margin-top: 3px;
+}
+
+ .product {
+    height: 26px;
+    border: 1px solid #79878d;
+    border-radius: 13px;
+    clear: both;
+        
+}
+
+.left .product{
+    width: 149px;
+    margin-top: 13px;
+}
+
+.round {
+    float: left;
+    height: 22px;
+    width: 22px;
+    background-color: #114165;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.left .round{
+    margin-top: 2px;
+    margin-left: 5px;
+    margin-right: 3px;
+}
+
+.round img {
+     margin-top: 5px;
+}
+
+.product  p{
+    font-size: 14px;
+    font-family: 'Lucida Sans Unicode';
+    color: #114165;
+}
+
+.product ul {
+    width: 160px;
+    margin-left: 46px;
+    margin-top: 7px;
+}
+
+.product a{
+    font-size: 13px;
+    color: #465961;
+    margin-bottom: 14px;
+    line-height: 25px;
+    text-decoration: none;
+    font-family: 'Lucida Sans Unicode';
+}
+
+.product li {
+    list-style-type: circle;
+}
+
+.product a:hover{
+    color: #0c3256;
+    text-decoration: underline;
+    font-family: 'Arial Bold';
+    font-style: italic;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+content content {
+    /*float: left;*/
+    margin-top: 18px;
+    margin-left: 11px;
+    width: 526px; 
+    height: 626px;
+    background: linear-gradient(to top, #93a7b0, #e5e7e8);
+}
+
+.right{
+    float: left;
+    margin-top: -644px;
+    margin-left: 725px;
+    width: 185px;
+    height: 625px;
+    
+}
+
+.right .catalogProd{
+    margin-top: 19px;
+    margin-left: 2px;
+}
+
+.right figure{
+    margin-left: 3px;
+}
+
+.right img{
+    margin-top: 3px;
+    margin-left: 1px;
+}
+
+.right p{
+    font-family: 'Lucida Sans Unicode';
+    margin-top: 6px;
+    
+}
+
+.right .product{
+    margin-top: 14px;
+    margin-left: 16px;
+    width: 135px;
+    margin-bottom: 87px;
+}
+
+.right .round {
+    margin-top: 2px;
+    margin-left: 4px;  
+}
+
+.right .round img {
+    margin-top: 5px;
+}
+
+.right .checkBox {
+    margin-top: 10px;
+    margin-left: 12px;
+    color: #465961;
+    font-size: 13px;
+    font-family: 'Lucida Sans Unicode';
+}
+
+input[type="checkbox"]{
+    margin:3px 11px 9px -3px;
+}
+
+.right .sub {
+    height: 26px;
+    width: 82px;
+    margin-left: 25px;
+    margin-top: 6px;
+    background: linear-gradient(to top, #0c3357, #1f6787);
+    border: none;
+    border-radius: 25px;
+    color: #e5e9ea;
+    box-shadow: 2px 3px 3px 0px rgba(44,52,90, 0.5);
+    font-size: 11px;
+}
+
+.card {
+    position: relative;
+    width: 139px;
+    height: 180px;
+    text-align: center;
+}
+
+.card .goods {
+    border: 1px solid #b0b9bc;
+    border-radius: 8px;
+    width: 136px;
+    height: 127px;
+    background-color: white;
+    
+}
+
+.card img{
+    margin-left: -3px;
+    margin-top: 5px;
+}
+
+.card .title{
+    color: #206988;
+    font-size: 15px;
+    font-family: 'Lucida Sans Unicode';
+}
+
+.card .name{
+    color: #1f2528;
+    font-size: 13px;
+    font-family: 'Lucida Sans Unicode';
+}
+
+.card .price {
+    color: #114165;
+    font-size: 16px;
+    font-family: 'Arial';
+    font-weight: bold;
+    font-style: italic;
+    line-height: 24px;
+    margin-left: 10px;
+}
+
+.card .currency{
+    color: #114165;
+    font-size: 14px;
+    font-family: 'Arial';
+    font-weight: bold;
+    font-style: italic;
+    line-height: 24px;
+    margin-left: 4px;
+}
+
+.card .goodyear1{
+    position: absolute;
+    margin-top: 11px;
+    margin-left: 23px;
+}
+
+.card .goodyear2{
+    position: absolute;
+    margin-top: 33px;
+    margin-left: 23px;
+}
+
+.card .goodyear3{
+    position: absolute;
+    margin-top: 57px;
+    margin-left: 23px;
+}
+
+.card .nokian1{
+    position: absolute;
+    margin-top: -529px;
+    margin-left: 191px;
+}
+
+.card .nokian2{
+    position: absolute;
+    margin-top: -508px;
+    margin-left: 190px;
+}
+.card .nokian3{
+    position: absolute;
+    margin-top: -484px;
+    margin-left: 191px;
+}
+
+.card .hankook1{
+    position: absolute;
+    margin-top: -1069px;
+    margin-left: 359px;
+}
+
+.card .hankook2{
+    position: absolute;
+    margin-top: -1048px;
+    margin-left: 359px;
+}
+
+.card .hankook3{
+    position: absolute;
+    margin-top: -1024px;
+    margin-left: 359px;
+}
+
+footer header{
+    height: 50px;
+    width: 700px;
+    margin-top: 35px;
+    margin-left: 153px;
+}
+
+footer header img {
+    vertical-align:top;
+    padding-left: 9px;
+}
+
+footer content {
+    margin-top: -2px;
+    margin-left: 45px;
+    width: 907px;
+    height: 99px;
+    background-color: #213a4d;
+    border: 1px solid #223346;
+    border-bottom: none;
+}
+
+footer content table {
+    margin-top: 10px;
+    margin-left: 293px;
+    border: none;
+}
+
+footer content td {
+    color: #bec6c9;
+    font-size: 13px;
+    font-family: 'Arial Regular';
+    vertical-align: middle;
+    padding-left: 16px;
+    padding-right: 10px;
+    border-right: 1px solid #bec6c9;
+}
+
+footer content td:hover {
+    color: #52abcb;
+}
+
+footer content span{
+    position: absolute;
+    margin-left: 375px;
+    margin-top: 16px;
+    color: #7f4740;
+    font-size: 10px;
+    font-family: 'Arial';
+}

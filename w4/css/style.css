@@ -1,22 +1,28 @@
-.bg {
+body {
     background: url(../img/backgound.jpg)
 }
 
 .mainBlock {
     width: 1000px;
-    height: 1000px;
+    min-height: 980px;
     background: white;
     margin: 0 auto;
     overflow: hidden;
-}
+    border-bottom: 1px solid black;
+    box-shadow: 0 2px 5px 0 rgb(0, 0, 0);
+}    
 
-#menu {
+.menu {
+    height: 35px;
     margin: -2px;
 	font-size: 14px;
     color: #ffffff;
+    position: relative;
+    border-bottom: 1px solid black;
+    box-shadow: 0 2px 5px 0 rgb(0, 0, 0);
 }
 
-#menu li {
+.menu li {
     list-style: none;
     float: left;
     height: 23px;
@@ -26,9 +32,10 @@
 	position: relative;
 	padding-top: 12px;
     margin-right: -8px;
+   
 }
 
-#menu li ul {
+.menu li ul {
   list-style: none;
 	padding: 0;
 	margin: 0;
@@ -39,7 +46,7 @@
 	top: 45px;
 }
 
-#menu li ul li {
+.menu li ul li {
 	float: none;
 	height: 33px;
 	margin: -10px;
@@ -50,27 +57,50 @@
 	background: #343434;
 	}
 
-#menu li:hover ul, #menu li.jshover ul {
+.menu li:hover ul, #menu li.jshover ul {
 	display: block;
 	}
 
-#menu li:hover, #menu li.jshover {
+.menu li:hover, #menu li.jshover {
 	background: #343434;
 	}
 
+.menu a{
+    color: white;
+    text-decoration: none;
+}
+
+.columns{
+    
+    width: 1000px;
+    overflow: hidden;
+}
+
 .leftColumn {
+    padding-top: 10px;
     width: 210px;
     float: left;
     background: #edeef0;
-    padding-bottom: 440px;    
+    padding-bottom: 500px;
+    margin-bottom: -500px;
+}
+
+.centerColumn {
+    padding-top: 10px;
+    width: 580px;
+    float: left;
+    padding-bottom: 500px;
+    margin-bottom: -500px;
 }
 
 .rightColumn {
+    padding-top: 10px;
     width: 210px;
-    float: right;
+    float: left;
     background: #edeef0;
-    padding-bottom: 160px;
-    margin-right: 0px;
+     padding-bottom: 500px;
+    margin-bottom: -500px;
+    
 }
 
 .title {
@@ -83,9 +113,9 @@
 
 .flags {
     list-style: none;
-    position: absolute;
+    float: left;
     margin-top: -120px;
-    margin-left: 550px;  
+    margin-left: 550px; 
 }
 
 .flags li {
@@ -127,18 +157,39 @@
     background-image: url(../img/india.jpg);
 }
 
-.header img {
-    position: relative; 
-    margin-top: 12px;
-    padding-left: 20px;
+/*
+.content {
+    margin-top: px;
 }
+*/
 
 .header p {
-    position: absolute;
+    float: left;
     font-size: 12px;
     color: #128aa7;
     margin-top: -170px;
     padding-left: 810px;
+}
+
+.logo {
+    position: relative;
+    width: 283px;
+    height: 116px;
+    padding-top: 63px;
+    padding-left: 20px;
+    }
+
+.header .slogan {
+    position: absolute;
+    font-size: 12px;
+    color: #128aa7;
+    margin-left: 78px;
+    margin-top: -70px;    
+}
+
+.footer {
+    text-align: center;
+    color: white;
 }
 
 p {
