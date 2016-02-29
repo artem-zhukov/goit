@@ -522,7 +522,7 @@ footer content {
 footer content table {
     margin-top: 10px;
     margin-left: 293px;
-    border: none;
+   
 }
 
 footer content td {
@@ -532,6 +532,10 @@ footer content td {
     padding-left: 16px;
     padding-right: 10px;
     border-right: 1px solid #bec6c9;
+}
+
+footer content .cell {
+     border: none;
 }
 
 footer content a{
