@@ -30,64 +30,106 @@ p, li {
 .menu {
     position: relative;
     list-style: none;
-    width: 350px;
-    margin-left: 430px;
-    
+    width: 900px;
+    margin-left: 400px;
 }
 
 .menu ul {
     position: absolute;
-    margin-top: 3px;
-    padding-right: 5px;
-    height: 30px;
-    border-right:1px solid #56a2dc;
+     margin-bottom: -10px;
+    margin-top: 5px;
+    padding-right: 5px; 
 }
 
 .menu li {
     float: left;
-    height: 25px;
-    padding-top: 10px;
+    height: 10px;
+    padding-top: 5px;
     padding-left: 10px;
 }
 
-.menu .fMenu li, a{
+.menu .main_menu{
+    padding-top: 18px;
+    padding-bottom: 8px;
+    padding-left: 5px;
+    padding-right: 5px;
     color: #56a2dc;
-    margin-top: -3px;
 }
 
-.menu .fMenu li:hover, a:hover{
+.menu  li{
+    padding-top: 7px;
+    padding-bottom: 10px;
+    padding-left: 7px;
+    padding-right: 5px;
+    color: #56a2dc;
+    margin-top: -2px;
+}
+
+.menu .main_menu:hover{
     color: white;
     background: #4eabda;
 }
 
-.menu .secMenu {
-    border: none;
-    margin-top: 0px;
-    margin-left: 360px;
-    width: 140px;
-    color: white;
-} 
-
-.menu .secMenu img{
-    margin-top: 5px;
-    float: left;
+.li_verticalLine {
+    border-right: 2px solid #56a2dc;
+    padding-left: 10px;
+    padding-right: 5px;
 }
 
-.menu .thMenu {
-    margin-top: 0px;
-    margin-left: 520px;
-    background: url(../img/headerBack.png);
-    width: 230px;
-    height: 35px;
+
+.menu .li_flag {
+    color: #fefefe;
+    text-align: right;
+    width: 150px;
+    background: url(../img/flag.png) 15px 5px no-repeat;
+    padding-left: 5px;
+}
+
+.menu .ola {
+    padding-left: 7px;
+    margin-top: -6px;
+    padding-bottom: 8px;
+    padding-top: 10px;
+    background: linear-gradient(to top, #2e7ac4, #51b1dc);
+    height: 16px;
+    color: white;
+    border: 1px solid #5fa6e1;
+    border-right: none;
+}
+
+.menu .entrar {
+    margin-top: -5px;
+    padding-top: 10px;
+    background: linear-gradient(to top, #2e7ac4, #51b1dc);
+    height: 14px;
+    border-bottom: 1px solid #5fa6e1;
+}
+
+.menu .entrar_a{
     color: white;
 }
 
-.menu .thMenu a{
-    color: white;
-}
-
-.thMenu .entrar:hover {
+.menu .entrar_a:hover{
     text-decoration: underline;
+}
+
+.menu .ou {
+    margin-top: -5px;
+    padding-top: 10px;
+    background: linear-gradient(to top, #2e7ac4, #51b1dc);
+    height: 14px;
+    color: white;
+    border-bottom: 1px solid #5fa6e1;
+}
+
+.menu .cadastre {
+    margin-top: -5px;
+    padding-top: 11px;
+    padding-right: 7px;
+    background: linear-gradient(to top, #2e7ac4, #51b1dc);
+    height: 13px;
+    border-bottom: 1px solid #5fa6e1;
+    border-right: 1px solid #5fa6e1;
 }
 
 .windowInput {
@@ -157,7 +199,7 @@ input.text:focus, password:focus {
 }
 
 .butCreate {
-    background-image: url(../img/ok.png);
+    background: linear-gradient(to top, #2e7ac4, #4faddb);
     border-radius: 3px;
 }
 
