@@ -1,0 +1,122 @@
+body{
+    max-width: 2400px;
+}
+
+@font-face {
+  font-family: 'Open Sans light';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url(http://themes.googleusercontent.com/static/fonts/opensans/v8/DXI1ORHCpsQm3Vp6mXoaTYraN7vELC11_xip9Rz-hMs.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Open Sans exbold';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Open Sans Extrabold'), local('OpenSans-Extrabold'), url(http://themes.googleusercontent.com/static/fonts/opensans/v8/EInbV5DfGHOiMmvb1Xr-horaN7vELC11_xip9Rz-hMs.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'league';
+    src: url('../font/leaguegothic-condensedregular-webfont.eot');
+    src: url('../font/leaguegothic-condensedregular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/leaguegothic-condensedregular-webfont.woff2') format('woff2'),
+         url('../font/leaguegothic-condensedregular-webfont.woff') format('woff'),
+         url('../font/leaguegothic-condensedregular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+#wrapper {
+    margin: 0 auto;
+    height: 2525px;
+    background: white;
+}
+
+
+header {   
+    height: 516px;
+    overflow: hidden;
+
+}
+
+footer {   
+  max-height: 201px;
+}
+
+
+header img{
+   max-width: 1000%;
+   
+}
+
+footer img{
+   max-width: 1000%;
+
+}
+
+ .content__header {
+
+    height: 597px;
+    background: linear-gradient(to top, #36293d, #745083);
+    border-top: 1px solid #34263b;
+    border-bottom: 1px solid #12191f;
+}
+
+ .content__content {
+    height: 780px;
+    background: red;
+}
+
+.content__footer {
+    height: 429px;
+    background: green;
+}
+
+/*@media (max-width: 360px){
+    
+}*/
+
+.wrapper_slider {
+  
+	height: 240px;
+	margin-left: 200px;
+    margin-top: 200px;
+	/*position: relative;*/
+	width: 266px;
+}
+
+.slider {
+
+	height: inherit;
+	overflow: hidden;
+	position: relative;
+	width: inherit;
+	/*-webkit-box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+	-moz-box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+	-o-box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+	box-shadow: 0 0 20px rgba(0, 0, 0, .5);*/
+}
+
+/*.wrapper > input {
+	display: none;
+}*/
+
+.slides {
+	height: inherit;
+	position: absolute;
+	width: inherit;
+}
+
+.point{
+    
+}
+
+.slides .slider--title { 
+font-family: "league";
+    color: #fefefe;
+    font-size: 30px;
+}
+

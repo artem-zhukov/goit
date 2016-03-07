@@ -1,12 +1,9 @@
-body {
-    background:darkgray;
-}
-
 .main {
     width: 1000px;
     height: 1310px;
     margin: 0 auto;
     background: white;
+    overflow: hidden;
 }
 
 header{
@@ -73,8 +70,8 @@ header{
 }
 
 .avtorization table {
- float: left;
- margin-top: 3px;
+float: left;
+margin-top: 3px;
 }
 
 .avtorization a {
@@ -82,10 +79,14 @@ header{
     text-decoration: none;
 }
 
+.avtorization  tr {
+    height: 8px;
+}
+
 .avtorization td {
-    font-size: 11px;
-    padding-right: 5px;
-    padding-left: 12px;   
+    font-size: 12px;
+    padding-right: 6px;
+    padding-left: 9px;   
 }
 
 .avtorization td.enter {
@@ -166,6 +167,7 @@ content li {
     padding: 3px 20px 3px 20px;
     border-radius: 25px;
     margin-left: -20px;
+    margin-right: -20px;
     background: linear-gradient(to top, #0c3357, #25617b);
 }
 
@@ -250,8 +252,7 @@ figure img {
     height: 26px;
     border: 1px solid #79878d;
     border-radius: 13px;
-    clear: both;
-        
+    clear: both;    
 }
 
 .left .product{
@@ -313,7 +314,6 @@ figure img {
 }
 
 content content {
-    /*float: left;*/
     margin-top: 18px;
     margin-left: 11px;
     width: 526px; 
@@ -497,6 +497,11 @@ input[type="checkbox"]{
     margin-left: 359px;
 }
 
+footer {
+    clear: both;
+    height: 184px;
+}
+
 footer header{
     height: 50px;
     width: 700px;
@@ -519,23 +524,46 @@ footer content {
     border-bottom: none;
 }
 
-footer content table {
-    margin-top: 10px;
-    margin-left: 293px;
-   
-}
-
-footer content td {
+footer td{
     font-size: 13px;
-    font-family: 'Arial Regular';
-    vertical-align: middle;
-    padding-left: 16px;
-    padding-right: 10px;
-    border-right: 1px solid #bec6c9;
+    padding-left: 11px;
+    padding-right: 13px;
 }
 
-footer content .cell {
-     border: none;
+footer .table--company {
+    margin-top: 10px;
+    margin-left: 298px;   
+}
+
+footer .table--delivery{
+    margin-left: 390px;
+    margin-top: -13px;
+}
+
+footer .table--article{
+    margin-left: 467px;
+    margin-top: -13px;
+}
+
+footer .table--contact{
+    margin-left: 532px;
+    margin-top: -13px;
+}
+
+footer .table--company td, footer .table--delivery td{
+    border-right: 1px solid #7a878f;
+}
+
+footer .table--delivery td, footer .table--article td{
+    border-left: 1px solid #8d989f;
+}
+
+footer .table--article td{
+    border-right: 1px solid #5b6a76;
+}
+
+footer .table--contact td{
+    border-left: 1px solid #afb7bc;
 }
 
 footer content a{
