@@ -1,8 +1,18 @@
-body {
-    background: url(../img/backgound.jpg)
+body{
+   background: linear-gradient(to bottom, #40c6d3, #0c739f);
+   background-size: contain;
+}
+
+
+.upBack {
+    position: absolute;
+    background: url(../img/backLine.png) repeat-x;
+    height: 175px;
+    width: 100%;
 }
 
 .mainBlock {
+    position: relative;
     width: 1000px;
     min-height: 980px;
     background: white;
@@ -71,18 +81,16 @@ body {
 }
 
 .columns{
-    
     width: 1000px;
     overflow: hidden;
 }
 
 .leftColumn {
     padding-top: 10px;
-    width: 210px;
+    width: 21%;
     float: left;
     background: #edeef0;
     padding-bottom: 500px;
-    margin-bottom: -500px;
 }
 
 .centerColumn {
@@ -95,12 +103,9 @@ body {
 
 .rightColumn {
     padding-top: 10px;
-    width: 210px;
+    width: 21%;
     float: left;
-    background: #edeef0;
-     padding-bottom: 500px;
-    margin-bottom: -500px;
-    
+    background: #edeef0;   
 }
 
 .title {
@@ -156,12 +161,6 @@ body {
 .flags .india a {
     background-image: url(../img/india.jpg);
 }
-
-/*
-.content {
-    margin-top: px;
-}
-*/
 
 .header p {
     float: left;
