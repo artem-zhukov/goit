@@ -18,7 +18,7 @@ header{
     height: 22px;
     width: 290px;
     float: left;
-    
+
 }
 .contact .phone {
     float: left;
@@ -86,7 +86,7 @@ margin-top: 3px;
 .avtorization td {
     font-size: 12px;
     padding-right: 6px;
-    padding-left: 9px;   
+    padding-left: 9px;
 }
 
 .avtorization td.enter {
@@ -98,9 +98,9 @@ margin-top: 3px;
 }
 
 .avtorization .forgetPas a{
-     padding-left: 15px; 
+     padding-left: 15px;
      color: #bfbfbf;
-     font-size: 12px; 
+     font-size: 12px;
      text-decoration: underline;
 }
 
@@ -134,7 +134,7 @@ content{
 content header {
     margin-left: -1px;
     height: 35px;
-    width: 911px; 
+    width: 911px;
     background: linear-gradient(to top, #010101, #4d5663);
     border-radius: 5px;
     border: 1px solid #2c345a;
@@ -176,7 +176,7 @@ content li {
     margin-top: -3px;
     margin-left: 42px;
     margin-right: 6px;
-} 
+}
 
 .order p {
     float: left;
@@ -187,7 +187,7 @@ content li {
 
 .num p{
     color: #0d5a8f;
-    font-size:13px; 
+    font-size:13px;
 }
 
  .sum p{
@@ -262,7 +262,7 @@ figure img {
     height: 26px;
     border: 1px solid #79878d;
     border-radius: 13px;
-    clear: both;    
+    clear: both;
 }
 
 .left .product{
@@ -320,7 +320,7 @@ figure img {
 content main {
     margin-top: 20px;
     margin-left: 191px;
-    width: 526px; 
+    width: 526px;
     height: 626px;
     background: linear-gradient(to top, #93a7b0, #e5e7e8);
 }
@@ -331,7 +331,7 @@ content main {
     margin-left: 725px;
     width: 185px;
     height: 625px;
-    
+
 }
 
 .right .catalogProd{
@@ -351,7 +351,7 @@ content main {
 .right p{
     font-family: 'Lucida Sans Unicode';
     margin-top: 6px;
-    
+
 }
 
 .right .product{
@@ -363,7 +363,7 @@ content main {
 
 .right .round {
     margin-top: 2px;
-    margin-left: 4px;  
+    margin-left: 4px;
 }
 
 .right .round img {
@@ -408,7 +408,7 @@ input[type="checkbox"]{
     width: 136px;
     height: 127px;
     background-color: white;
-    
+
 }
 
 .card img{
@@ -537,7 +537,7 @@ footer td{
 
 footer .table--company {
     margin-top: 10px;
-    margin-left: 298px;   
+    margin-left: 298px;
 }
 
 footer .table--delivery{

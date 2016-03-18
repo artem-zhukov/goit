@@ -1,0 +1,1499 @@
+body,button[disabled],html,html input[disabled]{
+	cursor:default;
+	}
+*,input[type=checkbox],input[type=radio]{
+	box-sizing:border-box;
+	}
+
+.header__logo,.main-nav,.main-nav__list,.slider__item,.slider__thumbs,footer p{
+	text-align:center;
+	}
+
+article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{
+	display:block;
+	}
+audio,canvas,progress,video{
+	display:inline-block;
+	vertical-align:baseline;
+	}
+
+audio:not([controls]){
+	display:none;
+	height:0;
+	}
+[hidden],template{
+	display:none;
+	}
+.main-nav:after,.wrapper:after{
+	display:table;
+	clear:both;
+	content:'';
+	}
+html{
+	font-family:sans-serif;
+
+	}
+body{
+	line-height:1;
+	color:#000;
+	font-size:16px;
+	background-color:#f0f0f0;
+	background-image:url(../images/chruch.png);
+	max-width:2400px;
+	}
+a{
+	background:0 0;
+		}
+:active,:focus,:hover{
+	outline:0;}
+hr{
+	box-sizing:content-box;
+	height:0;
+		}
+ol,ul{
+	list-style:none;
+		}
+.colortext {
+    color: #edbfff;
+}
+
+.slider__item,.slider__wrapper{
+	overflow:hidden;
+	}
+
+table{
+	border-collapse:collapse;
+	border-spacing:0;
+	}
+
+.sub-header__img__notes{
+    display: none;
+}
+
+.sub-header__img__cloud{
+    display: none;
+}
+
+.about-slider p,.about-updates__item,.sub-header__item p{
+    line-height: 24px;
+    width: 197px;
+    height: 169px;
+    overflow: hidden;
+    font-size: 18px;
+	}
+}
+
+/*@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url(https://fonts.gstatic.com/s/opensans/v13/DXI1ORHCpsQm3Vp6mXoaTa-j2U0lmluP9RWlSytm3ho.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;
+}*/
+
+@font-face {
+  font-family: 'Open Sans exbold';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Open Sans Extrabold'), local('OpenSans-Extrabold'), url(http://themes.googleusercontent.com/static/fonts/opensans/v8/EInbV5DfGHOiMmvb1Xr-horaN7vELC11_xip9Rz-hMs.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'League';
+  src: url('assets/fonts/LeagueGothic-Regular.otf')
+}
+
+.about-updates .about-updates__readmore{
+    display: none;
+}
+
+.wrapper{
+	margin:1px auto;
+	width:400px;
+	}
+.header{
+    position: relative;
+	padding:55px 0;
+    /*z-index: 1;*/
+	background:url(assets/images/bg.jpg) center 0 no-repeat;
+	background-size: 100% 100% auto;
+	min-height:500px;
+
+	}
+.header :hover{
+	background: url(assets/images/featured-img);
+}
+
+.header__logo{
+	margin-bottom:40px;
+    margin-top: 7px;
+    margin-right: 38px;
+	}
+
+.main-backslide {
+    width: 480px;
+    height: 300px;
+    position: absolute;
+    color: black;
+}
+
+.main-nav{
+	width:250px;
+	margin:27px auto 158px;
+	}
+
+.main-nav__list li:not(:first-child){
+	display:none;
+	}
+
+.main-nav__list li:last-child{
+	border-bottom-right-radius:5px;
+	border-bottom-left-radius:5px;
+	}
+
+.main-nav__list:hover li:not(:first-child){
+	display:block;
+	}
+
+.main-nav__list{
+	border:1px solid transparent;
+	border-radius:5px;
+	width:100%;
+	position:absolute;
+	top:139px;
+    left:0;
+	}
+.main-nav__list:hover{
+	background:rgba(54,40,62,.9);
+	border:1px solid #000;
+}
+
+.footer-nav__list a {
+	float: left;
+	text-decoration: none;
+	color: #fff;
+}
+
+.main-nav__list:hover .main-nav__first--li:after{
+	display:none;
+	}
+
+.main-nav__list .main-nav__first--li{
+	border-top:none;
+	border-bottom:none;
+	}
+
+.main-nav__list .main-nav__first--li a{
+    font-family: 'League';
+    font-size: 23px;
+	display:inline-block;
+	width:60px;
+	text-decoration: 1px;
+	}
+
+.main-nav__first--li a:hover{
+	text-decoration: none;
+}
+
+.main-nav__list .main-nav__first--li:after{
+	content:"";
+	position:absolute;
+	bottom:0;left:50%;
+	width:18%;
+	margin-left:-9%;
+	border:1px solid #edbfff;
+	}
+
+.about-slider__slides:after,.sub-header__item:after{
+	clear:both;content:'';
+	}
+
+.main-nav__list li{
+	padding:5px 0;
+	border-top:1px solid grey;
+	}
+
+.main-nav__list li a{
+	width:100%;
+	font-family: 'League';
+	color:#fff;
+	text-decoration:none;
+	font-size:23px;
+	display:inline-block;
+	}
+
+.slider{
+	position:relative;
+	width:270px;
+	height:155px;
+	font-size:0;
+	margin:0 auto;
+	}
+
+.slider__slides{
+	width:9000px;
+    margin-top: 48px;
+	}
+
+.slider__item{
+	display:inline-block;
+	width:261px;
+	height:70px;
+	}
+
+.slider__img,.slider__p,.footer-nav__list{
+	display:none;
+	}
+
+.slider__desc h2{
+    font-family: 'League';
+	font-size:35px;
+	margin-bottom:2px;
+	color:#fff;
+	}
+
+.slider__desc h3{
+    font-family: 'League';
+    font-size: 18px;
+    color: #edbfff;
+    white-space: normal;
+    padding-left: 36px;
+    width: 246px;
+    height: 18px;
+    overflow: hidden;
+	}
+
+.slider__toggle i{
+	position:absolute;
+	cursor:pointer;
+	width:30px;
+	height:40px;
+	top:10px;
+	}
+
+.slider__next{
+	right:-28px;
+	background:url(../images/next.png);
+	}
+
+.slider__prev{
+	left:-28px;
+	top:0;width:30px;
+	height:40px;
+	background:url(../images/prev.png);
+	}
+
+.slider__thumbs{
+	width:100px;
+	position:absolute;
+	bottom: 5px;
+    margin-left: -41px;
+	left:50%;
+	}
+
+.slider__thumbs i{
+	display:inline-block;
+	background:#6e6b75;
+	opacity:.6;
+	width:16px;
+	height:16px;
+	border-radius:50%;
+	border:3px solid #6e6b75;
+	cursor:pointer;
+	margin-right:6px;
+	vertical-align:top;
+	}
+
+.slider__thumbs .active{
+	background:#fff;
+	opacity:1;
+	}
+
+.sub-header{
+	padding:40px 73px;
+	background:linear-gradient(to bottom,#755282 32%,#3c2d44 100%);
+	border:1px solid #000;
+	border-right:none;border-left:none;
+	}
+
+.sub-header__item{
+	background:url(../images/item.png) no-repeat;
+    margin-top: 29px;
+	padding-left:50px;
+	margin-bottom:55px;
+	}
+
+.sub-header__item3{
+    background:url(../images/item.png) no-repeat;
+    margin-top: 29px;
+	padding-left:50px;
+	margin-bottom:55px;
+    padding-top: 16px;
+}
+
+.sub-header__item img, .sub-header__item3 img{
+    position: absolute;
+    margin-left: -50px;
+    margin-top: 4px;
+}
+
+.sub-header__item:after, .sub-header__item3:after{
+	display:table;
+	}
+
+.sub-header__item h2, .sub-header__item3 h2{
+    font-family: 'League';
+	font-size:24px;
+	color:#fff;
+	margin-bottom:3px;
+	}
+
+.sub-header__item p, .sub-header__item3 p{
+    color: #fff;
+    font-size: 17.5px;
+    width: 200px;
+    padding-left: 2px;
+    height: 75px;
+    padding-left: 2px;
+    overflow: hidden;
+	}
+
+.sub-header__item a, .sub-header__item3 a{
+    display: inline-block;
+    text-decoration: none;
+    float: right;
+    font-size: 18px;
+    font-weight: 24px;
+    padding-right: 139px;
+    margin-top: 12px;
+    color: #fff;
+    overflow: hidden;
+    position: relative;
+    font-family: 'League';
+	}
+
+.sub-header__item a:hover, .sub-header__item3:hover{
+	 text-shadow:5px 3px 15px white,-5px -3px 15px white;
+	 color: #fff;
+}
+
+.about-slider__title h2,.about-slider__title h3,.about-updates h2{
+	font-size:24px;
+	text-transform:uppercase;
+	}
+
+.about{
+	background:#f9f9f9;
+	padding:68px 85px;
+	}
+
+.about-slider{
+    width: 254px;
+    height: 275px;
+    background: #fff;
+    margin-bottom: 87px;
+    margin-left: 1px;
+    margin-top: 0px;
+	}
+
+.about-slider__slides{
+	position:relative;
+	}
+
+.about-slider__slides:after{
+	display:table;
+	}
+
+.about-slider__item{
+	position:absolute;
+	left:0;
+	top:0;
+	padding:25px 30px 30px 33px;
+	}
+
+.about-slider__photo{
+	position:absolute;
+	left:-25px;
+	top:20px;
+	}
+.about-slider__title{
+	margin-bottom: 4px;
+	}
+.about-slider__title h2{
+	color:#454545;
+    font-family: 'League';
+	font-size:24px;
+	}
+
+.about-slider__title h3{
+	color:#edbfff;
+    font-family: 'League';
+	font-size:24px;
+	}
+
+.about-slider__toggle{
+    position: absolute;
+    width: 90px;
+    left: 50%;
+    bottom: -38px;
+    margin-left: -33px;
+	}
+
+.about-slider__toggle i{
+	display:inline-block;
+	width:15px;
+	height:15px;
+	background:#fff;
+	border:1px solid grey;
+	border-radius:50%;
+    margin-left: 2px;
+	}
+
+.about-slider__toggle .about-slider--active{
+	background:rgba(94,94,94,.5);
+	}
+
+.about-updates{
+	margin-left: -25px;
+	}
+
+.about-updates h2{
+    font-family: 'League';
+    font-size: 30px;
+    color: #454545;
+    margin-bottom: 19px;
+	}
+
+.about-updates__item{
+	margin-bottom:-102px;
+	padding-left:58px;
+	position:relative;
+    width: 300px;
+	}
+
+.about-updates__item img{
+    position: absolute;
+    margin-left: -56px;
+    top: 0;
+    width: 47px;
+    height: 46px;
+    border-radius: 50%;
+	}
+
+.about-updates__item h3{
+    font-family: 'Open Sans exbold';
+    margin-top: -3px;
+    margin-left: 9px;
+    font-size: 16px;
+    width: 200px;
+    height: 24px;
+    overflow: hidden;
+    color: #454545;
+	}
+
+.about-updates__item p{
+    font-size: 17px;
+    margin-left: 10px;
+    overflow: hidden;
+    height: 18px;
+}
+
+.about-updates a{
+     font-family: 'League';
+    margin-left: 187px;
+    margin-top: -1px;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 18px;
+    color: #454545;
+	}
+
+.about-brands{
+	border-top: 1px solid #e6e6e6;
+    margin-top: 88px;
+    padding-right: 401px;
+    margin-left: -86px;
+	}
+
+.about-brands__item{
+	position: relative;
+}
+
+.about-brands__item .brands1{
+   margin-left: 104px;
+   margin-right: 31px;
+   margin-bottom: 125px;
+   position: relative;
+}
+
+.about-brands__item .brands2{
+    margin-left: 20px;
+    margin-bottom: 125px;
+    position: relative;
+}
+
+.about-brands__item .brands3{
+    padding-top: 176px;
+    margin-left: -191px;
+    position: relative;
+}
+
+.about-brands__item .brands4{
+   margin-left: 53px;
+    position: relative;
+}
+.about-brands__item .brands5{
+    margin-top: 40px;
+    margin-left: 80px;
+    position: relative;
+}
+
+.about-brands__item .brands6{
+     margin-top: 32px;
+    margin-left: 43px;
+    position: relative;
+}
+
+.about-brands__item img:last-child{
+	margin-bottom:0;
+}
+
+.description{
+	display:none;
+}
+
+footer{
+	padding-top:40px;
+	padding-bottom:52px;
+	background:url(assets/images/footer-bg.jpg) 0 100%;
+	background-size: cover;
+	height: 200px;
+}
+
+footer p{
+	padding-top: 44px;
+    font-size: 12px;
+}
+
+footer p span{
+	font-family:'Open Sans exbold';
+	}
+
+@media (min-width:480px){
+    .wrapper {
+    width:480px;
+    margin-bottom: 35px;
+}
+    
+.main-nav{
+	margin-bottom:10px;
+}
+    
+.main-nav__list a:hover {
+	text-decoration: none;
+}
+    
+.main-nav__list a:hover {
+    border-bottom: 3px solid;
+	border-color: #edbfff;
+}
+    
+.slider{
+	height:300px;
+	width:440px;
+}
+    
+.slider__item{
+	width:440px;
+	height:260px;
+	position:relative;
+	}
+    
+.slider__toggle i{
+	top:50%;
+	margin-top:-20px;
+	}
+    
+.slider__next{
+	right:-25px;
+}
+    
+.slider__prev{
+	left:-25px;
+	}
+.slider__img{
+    display: block;
+    width: 192px;
+    position: absolute;
+    top: 43%;
+    right: 8px;
+    transform: translateY(-40%);
+	}
+    
+.slider__img img{
+	width:100%;
+	}
+    
+.slider__desc{
+    width: 260px;
+    padding-left: 21px;
+    text-align: left;
+    position: absolute;
+    top: 49%;
+}
+    
+.slider__thumbs{
+    margin-bottom: -42px;
+}
+    
+.about {
+    padding: 83px 110px;
+}
+    
+.about-slider__item{
+    padding-top: 20px;
+} 
+    
+.about-slider__item p{
+    width: 350px;
+    height: 200px;
+    overflow: hidden;
+    padding-top: 9px;
+ }   
+ 
+    .about-updates__item{
+     width: 330px;
+}
+
+    .about-updates__item h3{
+        width: 300px;
+    }
+.slider__desc h2{
+    font-family: 'League';
+    font-size: 35px;
+    margin-bottom: 4px;
+    color: #fff;
+}
+    
+.sub-header__item {
+    margin-top: 39px;
+    padding-left: 11px;        
+    }
+
+.sub-header__item3{
+    padding-top: 0px;  
+    padding-left: 8px;
+     margin-bottom: 0px;
+}
+    
+.sub-header__item3 p{
+    line-height: 24px; 
+}
+    .sub-header__item p, .sub-header__item3 p{
+       width: 379px; 
+    }    
+    .sub-header__item a, .sub-header__item3 a {
+        padding-right: 99px;
+    }
+    
+.about-slider{
+  width: 414px;
+    height: 275px;
+    margin-top: -19px;
+    margin-left: -63px;
+}
+    
+.about-slider__title h2 {
+    font-size: 30px;
+    margin-left: 4px;
+    margin-top: 6px;   
+}  
+    
+.about-slider__title h3 {
+    font-size: 30px;
+    margin-left: 4px;
+    margin-top: 6px;   
+    }    
+    
+.about-slider__toggle{
+    bottom: -24px;
+    left: 192px;
+}
+    
+.about-updates{
+	margin-bottom:90px;
+	}
+    
+.about-updates a{
+    margin-left: 249px;
+    margin-top: 0px;
+    }
+    
+.about-brands__item{
+	width: 350px;
+    padding-bottom: 115px;
+    margin-left: 59px;
+    position: relative;
+	}
+    
+.about-brands{
+    margin-top: -36px;
+    padding-right: 478px;
+    margin-left: -106px;
+}    
+   
+.about-brands__item img{
+	display:inline-block;
+	margin-bottom:30px;
+}
+    
+    .about-brands__item .brands1{
+      margin-left: 22px;
+    margin-top: 36px;
+    position: absolute;
+}
+
+.about-brands__item .brands2{
+    margin-left: 146px;
+    margin-top: 36px;
+    position: absolute;
+}
+    
+.about-brands__item .brands3{
+    margin-left: 273px;
+    position: absolute;
+    margin-top: -141px;
+}
+    
+.about-brands__item .brands4{
+    margin-left: -4px;
+    margin-top: 124px;
+    position: absolute;
+}
+    
+.about-brands__item .brands5{
+      margin-top: 128px;
+    margin-left: 108px;
+    position: absolute;
+}
+    
+.about-brands__item .brands6{
+     margin-top: 123px;
+    margin-left: 271px;
+    position: absolute;
+}
+    
+.description{
+	display:block;
+	padding:77px 16px 0px;
+    margin-bottom: -4px;
+	}
+
+.description__item{
+        display:none;
+}
+
+.description__news1 h2, .description__news2 h2, .description__news3 h2{
+        font-family: 'League';
+        font-size: 24px;
+}
+    
+.description__news1 p,  .description__news2 p, .description__news3 p{
+    font-family: 'Open Sans';
+    padding-top: 11px;
+    font-size: 18px;
+    line-height: 23px;
+    width: 448px;
+    height: 105px;
+    margin-bottom: 57px;
+    overflow: hidden;
+}
+    
+.footer-nav__list{
+       display: block;
+    padding: 46px 0px;
+    font-family: 'League';
+    font-size: 21px;
+}
+
+.footer-nav__list a {
+    padding-left: 18px;
+    padding-right: 3px;
+}
+    
+footer p{
+        padding-top: 11px;
+}
+}
+
+@media (min-width:768px){
+    
+.wrapper{
+     width:768px;
+    margin-bottom: 35px;
+}
+    
+.header {
+     padding: 96px 0;
+ }
+    
+.header__logo{
+  margin-left: -75%;
+  margin-top: -34px;
+ }
+    
+.main-nav{
+    width: 100%;
+    margin: 0;
+    margin-bottom: 10px;
+    margin-left: 21px;
+	}
+    
+.main-nav__list{
+    position: static;
+    text-align: left;
+    border: none;
+    display: table;
+    width: 652px;
+    margin-top: 25px;
+	}
+    
+.main-nav__list li,.main-nav__list:hover li:not(:first-child){
+	text-align:center;
+	display:table-cell;
+	}
+    
+.main-nav__list:hover{
+	background:0 0;
+	border:none;
+	}
+    
+.main-nav__list li a{
+    font-size: 24px;
+    margin-right: 54px;
+	}
+    
+.main-nav__list li a:hover{
+	color:white;
+	}
+    
+.main-nav__list li:not(:first-child){
+    display: table-cell;
+    border: none;
+	}
+    
+.main-nav__first--li:after{
+	display:none;
+	}
+    
+.main-nav__list .main-nav__first--li a {
+    width: 0px;
+    }
+
+.slider{
+    height: 450px;
+    width: 694px;
+    margin-left: 28px;
+    margin-top: 45px;
+	}
+.slider__item{
+    width: 692px;
+    height: 400px;
+    position: relative;
+	}
+    
+.slider__slides {
+    width: 9000px;
+    height: 500px;
+    margin-top: 7px;
+}
+    
+.slider__toggle i{
+	top:50%;
+	margin-top:-20px;
+	}
+    
+.slider__next{
+	right:-25px;
+	}
+    
+.slider__prev{
+	left:-25px;
+	}
+    
+.slider__img{
+ display: block;
+    width: 279px;
+    position: absolute;
+    top: 41%;
+    right: -4px;
+	}
+.slider__img img{
+	width:100%;
+	}
+    
+.slider__desc{
+    width: 260px;
+    padding-left: 16px;
+    height: 50px;
+    top: 36%;
+	}
+    
+.slider__desc h2{        
+    font-size: 47px;
+    margin-bottom: 4px;
+ }
+    
+.slider__desc h3{        
+    font-size: 24px;
+    padding-top: 5px;
+    padding-left: 0px;
+    width: 275px;
+    height: 30px;
+}
+    
+.slider__p {
+    display:block;
+    }
+
+.slider__desc p{
+    width: 296px;
+    font-family: 'Open Sans';
+    line-height: 26px;
+    font-size: 16px;
+    color: #fff;
+    margin-top: 6px;
+    height: 102px;
+    overflow: hidden;
+}
+
+.slider__thumbs{
+    margin-bottom: -35px;
+    margin-left: 161px
+}
+    
+.sub-header{
+   padding: 8px 20px;
+}
+    
+ .sub-header__item{
+    vertical-align: top;
+    display: inline-block;
+    width: 250px;
+    height: 195px;
+    margin-right: -2px;
+    padding-left: 64px;
+    padding-top: 29px;
+}
+    
+.sub-header__item p, .sub-header__item3 p{
+    font-family: 'Open Sans';
+    width: 155px; 
+    height: 139px;
+    font-size: 16px;
+    margin-right: -2px;
+} 
+    
+.sub-header__item3 {
+    float: right;
+    margin-right: 39px;
+    margin-top: 68px;
+}
+.sub-header__item a {
+    padding-right: 40px;
+}
+    
+.sub-header__item3 a{
+        padding-right: 8px;
+}
+    
+.about {
+    padding: 0px 100px;
+}
+                                                                    
+.about-slider{
+    float: left;
+    width: 312px;
+    height: 273px;
+    margin-right: 81px;
+    margin-top: 99px;
+    margin-left: -56px;
+}
+
+.colortext{
+        display: none;
+}
+    
+.about-slider__title h2 {
+    font-size: 24px;
+    margin-left: 4px;
+    margin-top: 8px;
+}
+    
+ .about-slider__title h3 {
+    font-size: 24px;
+    margin-left: 4px;
+    margin-top: 1px;
+}
+    
+.about-updates__item h3 {
+    font-size: 20px;
+    font-weight: 800;
+}
+    
+.about-slider__item p {
+   font-family: 'Open Sans';
+    font-size: 16px;
+    width: 279px;
+    height: 150px;
+    overflow: hidden;
+    padding-top: 4px;
+    padding-left: 4px;
+}
+    
+.about-updates a {
+    margin-left: 240px;
+    margin-top: -2px;
+}
+    
+.about-slider__toggle {
+    bottom: -54px;
+    left: 146px;
+}
+.about-updates{
+    padding-top: 128px;
+    padding-left: 2px;
+    float: left;
+}
+  
+.about-brands__item{
+	text-align:center;
+	font-size:0;
+	width:100%;
+} 
+    
+ .about-brands {
+    margin-top: -36px;
+    margin-right: -110px;
+    margin-left: -110px;
+}
+
+.about-brands__item .brands1{
+    margin-left: -410px;
+    margin-top: 25px;
+    position: absolute;
+}
+
+.about-brands__item .brands2{
+     margin-left: -287px;
+    margin-top: 25px;
+    position: absolute;
+}
+    
+.about-brands__item .brands3{
+  margin-left: -160px;
+    margin-top: -151px;
+    position: absolute;
+}
+    
+.about-brands__item .brands4{
+   margin-left: -41px;
+    margin-top: 21px;
+    position: absolute;
+}
+    
+.about-brands__item .brands5{
+    margin-top: 26px;
+    margin-left: 71px;
+    position: absolute;
+}
+    
+.about-brands__item .brands6{
+    margin-top: 22px;
+    margin-left: 233px;
+    position: absolute;
+}
+    
+.about-brands__item img{
+	margin-right:60px;
+	vertical-align:top;
+	}
+    
+.about-brands__item img:last-child{
+	margin-right:0;
+}
+    
+.description__news1,  .description__news2, .description__news3{
+    float: left;
+    margin-top: -16px;
+    padding-left: 3px;
+    padding-right: 44px;   
+}
+    
+.description__news3{
+    padding-left: 532px;
+    margin-top: -271px; 
+}
+    
+.description__news1 h2, .description__news2 h2, .description__news3 h2{
+    font-family: 'League';
+    padding-top: 9px;
+    font-size: 24px;
+    width: 123px;
+}
+    
+.description__news1 p,  .description__news2 p, .description__news3 p{
+    padding-top: 9px;
+    font-size: 16px;
+    line-height: 24px;
+    width: 220px;
+    height: 181px;
+    margin-bottom: 57px;
+    overflow: hidden;
+}
+    
+.footer-nav__list {
+    padding-top: 48px;
+    font-size: 20px;
+}
+    
+.footer-nav__list a {
+     padding-right: 25px;
+}
+
+.footer__wrapper p {
+    font-family: 'Open Sans';
+    padding-top: 11px;
+    margin-left: 587px;
+}
+    
+.footer__wrapper span {
+   font-weight: 900;
+    font-size: 14px;
+    padding-left: 1px;
+}
+   
+@media (min-width:960px){.slider__img,.slider__p{display:block}
+    
+.wrapper{
+	width:960px;
+}
+    
+.header {
+    padding: 176px 0;
+}    
+    
+.header__logo{
+    margin-left: -84%;
+    margin-top: -114px;
+	clear:both;
+}
+    
+.main-nav{
+	float:right;
+	width:auto;
+}
+    
+.main-nav li{
+    padding-left: 0px;
+}
+   
+.main-nav__list {
+    width: 630px;
+     margin-top: -44px;
+}
+    
+.main-nav__list  a {
+    font-size: 24px
+    margin-right: 35px;
+}
+    
+.main-nav__list .main-nav__first--li a {
+    padding-left: 0px;
+   
+}
+    
+.main-nav__first--li {
+    text-align: right;    
+    padding-left: 0px;
+}
+    
+.main-nav__list li:not(:first-child) {
+   padding-right: 0px;
+}
+    
+.main-nav__list li a {
+    font-size: 24px;
+    margin-right: 56px;
+}
+    
+ .main-nav__list li:last-child{
+    padding-left: 50px;
+}   
+    
+.slider,.slider__item{
+	width:960px;
+    margin-top: 71px;
+}
+
+.slider{
+	clear:both;
+	margin-left: 0px;
+	}
+    
+.slider__img{
+	right:68px;
+	}
+    
+.slider__desc{
+	width:500px;
+    margin-left: -16px;
+    margin-top: -24px;
+	}
+    
+.slider__desc h2{
+	margin-bottom:5px;
+	font-size:58px;
+	}
+    
+.slider__desc p{
+	line-height:24px;
+	font-size:18px;
+	}
+    
+.slider__desc h3{
+    margin-bottom: 12px;
+    font-family: 'League';
+    font-size: 32px;
+    margin-top: -9px;
+    width: 415px;
+    height: 31px;
+	}
+    
+.slider__desc p{
+	width: 508px;
+    height: 300px;
+	}
+    
+.slider__toggle{
+	display:none;
+	}
+
+.slider__thumbs {
+    margin-bottom: -159px;
+    margin-left: 226px;
+}
+    
+.sub-header__item{
+	width:360px;
+    margin-left: -22px;
+}
+
+.sub-header__img__nast{
+    display: none;
+}
+    
+.sub-header__img__cloud{
+    display: block;
+}
+    
+.sub-header__img__notes{
+     display: block;
+}
+    
+.sub-header__item h2, .sub-header__item3 h2 {
+    font-size: 30px;
+    margin-bottom: 9px;
+}
+    
+.sub-header__item3 {
+    width: 230px;
+    margin-right: 24px;
+}
+    
+.sub-header__item p, .sub-header__item3 p {
+    width: 230px;
+    height: 128px;
+    font-size: 16px;
+    margin-right: -20px;
+}
+    
+.sub-header__item a {
+    padding-right: 79px;
+}
+    
+.about{
+	margin-left: -20px;
+    margin-top: -2px;
+}
+    
+.about-slider{
+	width:427px;
+}
+    
+.about-slider__title h2 {
+    font-size: 30px;
+    margin-top: 11px;
+}
+    
+.colortext {
+     display: inline-block;
+}
+    
+.about-slider__title h3{
+     display: none;
+}
+    
+.about-slider__item p {
+    width: 370px;
+    height: 178px;
+} 
+    
+.about-slider__toggle {
+    bottom: -43px;
+    left: 204px;
+}
+    
+.about-updates__item {
+    width: 451px;
+}
+    
+.about-updates__item p {
+    margin-left: 8px;
+    height: 24px
+}
+
+.about-updates a{
+    display: none;
+}
+    
+.about-updates .about-updates__readmore{
+    display: block;
+    margin-left: 345px;
+}
+    
+.about-brands__item .brands1 {
+    margin-left: -416px;
+}
+    
+.about-brands__item .brands2 {
+    margin-left: -282px;
+}
+    
+.about-brands__item .brands3 {
+    margin-left: -145px;
+}
+
+.about-brands__item .brands4 {
+    margin-left: -16px;
+}
+      
+.about-brands__item .brands5 {
+    margin-left: 107px;
+}
+      
+.about-brands__item .brands6 {
+    margin-left: 277px;
+}
+    
+.description__news1, .description__news2{
+    display: none;
+}
+      
+.description{
+	padding: 3px 0;
+}
+.description__logo{
+	display:inline-block;
+	margin-bottom:13px;
+}
+    
+.description__item{
+    display: inline-block;
+    width: 279px;
+    margin-top: 59px;
+    margin-left: -7px;
+    vertical-align: top;
+}
+    
+.description__item span{
+	color:#c5c5c5;
+	margin-bottom:10px;
+	font-style:italic;
+	display:inline-block;
+	font-family:Georgia Italic,Helvetica,sans-serif;
+    margin-left: 6px;
+	}
+    
+.description__item h2{
+    font-family: 'League';
+	font-size:30px;
+	color:#454545;
+	margin-bottom:20px;
+	}
+    
+.description__item p{
+   font-family: 'Open Sans';
+    color: #787878;
+    line-height: 24px;
+    font-size: 16px;
+    width: 300px;
+    margin-left: 4px;
+	}
+    
+.description__item:last-child{
+    margin-left: 61px;
+    margin-top: 64px;
+}
+    
+.description__item:last-child h2{
+	   margin-bottom: 8px;
+}  
+    
+.description__item:last-child p{ 
+     margin-left: 0px;
+} 
+    
+.description__news3 {
+    padding-left: 677px;
+    margin-top: -215px;
+}
+    
+.description__news3 h2{
+    color:#454545;
+    font-size: 30px;
+    width: 155px;
+}
+    
+.description__news3 p{
+    color: #787878;
+    padding-top: 7px;
+    width: 273px;
+    height: 178px;
+}
+    
+footer{
+    height:  116px;
+}
+    
+.footer-nav__list {
+    float: left;
+   margin-left: -16px;
+}
+    
+.footer-nav__list a {
+	float: left;
+	text-decoration: none;
+	padding-left: 17px;
+	color: #fff;
+	text-shadow: 2px 2px 2px  rgba(0,0,0,0.25);
+}
+    
+ .footer__wrapper p {
+    padding-top: 54px;
+    margin-left: 818px;
+}
+
+}@media only screen and (max-width:400px){body{padding-top:0;padding-bottom:0}}
+	
+}
