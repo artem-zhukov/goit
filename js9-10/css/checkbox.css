@@ -10,17 +10,5 @@
 	background-position: 0 -17px;
 }
 .niceCheck input {
-	margin-left: -100px; /* можно задать побольше чтобы наверняка скрыть поле */
+	display: none;
 }
-
-
-
-
-
-/*.niceCheckDisabled {
-	background-image: url(../img/checkbox.png));
-}*/
-
-/*.niceCheck input {
-overflow: hidden;
-}*/

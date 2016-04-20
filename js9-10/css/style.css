@@ -52,10 +52,9 @@ background-position: 0 -51px;
 }
 .menu > li{
 	float:left;
-	background-color: #8B3A3A;
+	background-color: 	#FA8072;
 	text-align: center;
 	padding: 7px 15px;
-	margin-left: 1px;
 	cursor: pointer;
   width: 100px;
 }
@@ -64,7 +63,7 @@ background-position: 0 -51px;
 	position:absolute;
 	text-align: left;
 	z-index:100;
-	background-color:#8B2500;
+	background-color:	#CD3333;
 	width:200px;
 	margin-top:5px;
 }
@@ -72,10 +71,16 @@ background-position: 0 -51px;
 	margin-left:-13px;
 	font-size:20px;
 }
-.menu > li:hover > ul{display:block;}
+.menu > li:hover > ul{
+  display:block;
+}
 
 .menu > li li{
-	padding:4px 0 4px 8px;
+  padding: 6px 0px 6px 0px;
+  border-top: 1px solid #8B1A1A;
+
+  margin:0 10px 0 10px;
+
 }
 
 .menu > li > ul > li:hover > ul{
@@ -83,22 +88,37 @@ background-position: 0 -51px;
 }
 
 .menu > li > ul > li > ul{
-	margin-left:190px;
-	margin-top:-17px;
+	margin-left:180px;
+	margin-top:-30px;
 	width:220px;
+}
+
+.menu > li > ul > li.dir{
+    background:url('../img/arrowRight.png') 96% center no-repeat;
+}
+.menu > li > ul > li > ul >  li.dir{
+    background:url('../img/arrowRight.png') 96% center no-repeat;
 }
 .menu > li > ul > li > ul> li:hover > ul{
   display:block;
 }
 
 .menu > li > ul > li > ul > li > ul{
-	margin-left:212px;
-	margin-top:-17px;
+	margin-left:200px;
+	margin-top:-30px;
 	width:220px;
 }
 .menu > li a{
 	text-decoration: none;
-	color: #696969;
+	color: #FFF;
 	display:block;
   font-size: 20px;
+}
+
+.menu > li a:hover{
+  color: #000;
+}
+
+.menu > li > ul > li.dir{
+    content: '&#9658';
 }

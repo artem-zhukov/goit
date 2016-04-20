@@ -1,24 +1,16 @@
 jQuery(document).ready(function(){
 
 jQuery(".niceCheck").each(
-/* при загрузке страницы меняем обычные на стильные checkbox */
 function() {
 
      changeCheckStart(jQuery(this));
 
+   });
 });
-
-                                        });
 
 
 function changeCheck(el)
-/*
-	функция смены вида и значения чекбокса при клике на контейнер чекбокса (тот, который отвечает за новый вид)
-	el - span контейнер для обычного чекбокса
-	input - чекбокс
-*/
 {
-
 	var el = el,
 		input = el.find("input").eq(0);
 
@@ -51,13 +43,7 @@ var wrapInput = input.parent();
 	}
 }
 
-function changeCheckStart(el)
-/*
-	новый чекбокс выглядит так <span class="niceCheck"><input type="checkbox" name="[name check]" id="[id check]" [checked="checked"] /></span>
-	новый чекбокс получает теже name, id и другие атрибуты что и были у обычного
-*/
-{
-
+function changeCheckStart(el){
 try
 {
 var el = el,
@@ -101,7 +87,7 @@ var el = el,
 }
 catch(e)
 {
-	// если ошибка, ничего не делаем
+
 }
 
     return true;

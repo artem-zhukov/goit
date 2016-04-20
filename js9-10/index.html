@@ -38,7 +38,7 @@
         <br/>
           <div><label for="ch1">CheckBox JS 1 </label><input type="hidden" class="niceCheck" id="ch1" tabindex="1" /> </div>
           <div><label for="ch2">CheckBox JS 2 </label><input type="hidden" class="niceCheck" checked="checked" id="ch2" tabindex="2" value="2" /></div>
-          <div><label for="ch3">CheckBox JS 3 </label><input type="hidden" class="niceCheck" id="ch3" checked="checked" disabled="disabled" /></div></br>
+          <div><label for="ch3">CheckBox JS 3 </label><input type="hidden" class="niceCheck" id="ch3" checked="checked"/></div></br>
           <input type="checkbox" id="test-check1" /gt;
           <label for="test-check1">CheckBox CSS 1:</label><br/>
           <input type="checkbox" id="test-check2" /gt;
@@ -49,16 +49,16 @@
        <ul class="menu">
           <li><a href="#">Nav 1</a></li>
           <li><a href="#">Nav 2</a></li>
-          <li><a href="#">Nav 3 &#9660;</a>
-            <ul class="dir">
+          <li><a href="#">Nav 3 <img src="img/arrow.png" alt="" /></a>
+            <ul>
               <li><a href="#">Nav 3.1</a></li>
               <li><a href="#">Nav 3.2</a></li>
               <li><a href="#">Nav 3.3</a></li>
-              <li><a href="#">Nav 3.4 &#9658;</a>
-                <ul class="dir">
+              <li class="dir"><a href="#">Nav 3.4</a>
+                <ul>
                   <li><a href="#">Nav 3.4.1</a></li>
-                  <li><a href="#">Nav 3.4.2 &#9658;</a>
-                   <ul class="dir">
+                  <li class="dir"><a href="#">Nav 3.4.2</a>
+                   <ul>
                       <li><a href="#">Nav 3.4.2.1</a></li>
                       <li><a href="#">Nav 3.4.2.2</a></li>
                       <li><a href="#">Nav 3.4.2.3</a></li>
