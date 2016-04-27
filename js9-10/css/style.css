@@ -12,8 +12,8 @@ body {
 }
 
 #test-check1, #test-check2, #test-check3 {
-	position: absolute;
-  margin-left: 130px;
+  	position: absolute;
+    margin-left: 130px;
 }
 
 label {
