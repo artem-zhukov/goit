@@ -18,20 +18,18 @@
     <![endif]-->
   </head>
   <body>
-    <form class='Timer'>
-       <p id='id_1' class="form_mainTime">00:00:00</p>
-       <p id='id_2' class="form_milli">0</p>
-   </form>
-
-   <form class='TestForm'>
-     <!-- <button id='id_4'>Clear</button> -->
-     <!-- <button onclick="pause()" onsubmit="return false;" id='id_3'>Start</button> -->
+    <div class='timer'>
+       <p id='id_1' class="mainTime">00:00:00</p>
+       <p id='id_2' class="milli">0</p>
+   </div>
+   <div class='test'>
  <input id='id_3' type=button value="Start" onclick="pause()">
  <input id='id_4' type=button value="Clear" onclick="clearСlock()">
-</form>
+</div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.js"></script>
+    <script src="js/timer.js"></script>
   </body>
 </html>
