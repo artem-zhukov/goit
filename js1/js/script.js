@@ -1,9 +1,18 @@
-checkName();
+// checkName();
+pow();
 
 function pow(){
 var querty = prompt('Введите число и степень ч/з зяпятую');
 var numArray = querty.split(',');
-console.log(Math.pow(numArray[0],numArray[1]));
+var total = numArray[0];
+if(numArray[1]==0){
+total = 1;
+} else{
+  for(var i = 1; i<numArray[1]; i++ ){
+    total = total*numArray[0];
+  }
+}
+console.log(total);
 }
 
 
