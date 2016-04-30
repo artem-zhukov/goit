@@ -68,17 +68,34 @@ var testForm = {
   }
 }
 
+var listQuestions = {
+  question1: {
+    question:'1. Вопрос №1',
+    ask1:"Вариант ответа №1",
+    ask2:"Вариант ответа №2",
+    ask3:"Вариант ответа №3"
+  },
+  question2:{
+    question:'2. Вопрос №2',
+    ask1:"Вариант ответа №1",
+    ask2:"Вариант ответа №2",
+    ask3:"Вариант ответа №3"
+  },
+  question3: {
+    question:'3. Вопрос №3',
+    ask1:"Вариант ответа №1",
+    ask2:"Вариант ответа №2",
+    ask3:"Вариант ответа №3"
+  }
+}
 
 testForm.createTest('Тест по программированию', 'Проверить мои результаты');
-
-testForm.createTestQuestion('1. Вопрос №1',  ['Вариант ответа №1',
-                                              'Вариант ответа №2',
-                                              'Вариант ответа №3'] );
-
-testForm.createTestQuestion('2. Вопрос №2',  ['Вариант ответа №1',
-                                              'Вариант ответа №2',
-                                              'Вариант ответа №3'] );
-
-testForm.createTestQuestion('3. Вопрос №3',  ['Вариант ответа №1',
-                                              'Вариант ответа №2',
-                                              'Вариант ответа №3'] );
+var size = Object.keys(listQuestions).length;
+for(var i = 1; i<=size; i++){
+  var question = "question"+i;
+  testForm.createTestQuestion(listQuestions[question].question,  [] );
+    for(var y = 1; y <Object.keys(listQuestions[question]).length; y++){
+      var ask = "ask"+y;
+      testForm.createTestQuestion(" ",  [listQuestions[question][ask]] );
+    }
+}
