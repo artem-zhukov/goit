@@ -14,8 +14,12 @@ $(document).ready(function(){
   $("em").hide();
   var allInputs = $(":input");
   allInputs.hover(function(){
-    $(this).next("em").animate({opacity: "show"}, "slow");
+    $(this).next("em").animate({opacity: "show"}, "normal");
+    $("em").queue("fx", []);
+    console.log($("em").queue("fx"));
   }, function(){
-    $(this).next("em").animate({opacity: "hide"}, "fast");
+    $(this).next("em").animate({opacity: "hide"}, "normal");
+    $("em").queue("fx", []);
+    console.log($("em").queue("fx"));
   });
 });

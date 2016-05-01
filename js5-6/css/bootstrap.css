@@ -126,12 +126,19 @@ form{
   margin-top: -190px;
   margin-right: 150px;
 }
-#id_3{
-  margin-right: 400px;
+#toggle{
+  margin-right: 350px;
+  font-size: 30px;
   background-color: green;
 }
-#id_4{
+#clear{
+  font-size: 30px;
   background-color: red;
+}
+button{
+  height:70px;
+  width:220px;
+  border-radius: 20px;
 }
 
 input{

@@ -65,12 +65,13 @@ div.form {
 .formInput {
   clear:both;
   line-height:35px;
-  /*text-align: right;*/
 }
 
 label {
 float: left;
+text-align: left;
 padding-right:10px;
+width: 70px;
 }
 
 .main {
