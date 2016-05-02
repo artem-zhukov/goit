@@ -2,7 +2,6 @@ var time = document.getElementById('id_1');
 var milli = document.getElementById('id_2');
 var toggleBtn = document.getElementById('toggle');
 var resetBtn = document.getElementById('clear');
-
 var watch = new Stopwatch(time, milli);
 
 function start() {
