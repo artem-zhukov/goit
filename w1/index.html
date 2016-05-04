@@ -1,124 +1,36 @@
--- MySQL Workbench Forward Engineering
-
-SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0;
-SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
-SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='TRADITIONAL,ALLOW_INVALID_DATES';
-
--- -----------------------------------------------------
--- Schema mydb
--- -----------------------------------------------------
--- -----------------------------------------------------
--- Schema crius
--- -----------------------------------------------------
-
--- -----------------------------------------------------
--- Schema crius
--- -----------------------------------------------------
-CREATE SCHEMA IF NOT EXISTS `crius` DEFAULT CHARACTER SET utf8 ;
-USE `crius` ;
-
--- -----------------------------------------------------
--- Table `crius`.`languge`
--- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `crius`.`languge` (
-  `id` INT(11) NOT NULL AUTO_INCREMENT,
-  `name` VARCHAR(45) NOT NULL,
-  `delete` TINYINT(1) NULL DEFAULT NULL,
-  PRIMARY KEY (`id`))
-ENGINE = InnoDB
-DEFAULT CHARACTER SET = utf8;
-
-
--- -----------------------------------------------------
--- Table `crius`.`right`
--- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `crius`.`right` (
-  `id` INT(11) NOT NULL AUTO_INCREMENT,
-  `type_of_rule` INT(11) NOT NULL,
-  `delete` TINYINT(1) NULL DEFAULT NULL,
-  PRIMARY KEY (`id`))
-ENGINE = InnoDB
-DEFAULT CHARACTER SET = utf8;
-
-
--- -----------------------------------------------------
--- Table `crius`.`user`
--- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `crius`.`user` (
-  `id` INT(11) NOT NULL AUTO_INCREMENT,
-  `name` VARCHAR(100) NOT NULL,
-  `email` VARCHAR(45) NOT NULL,
-  `password` VARCHAR(45) NOT NULL,
-  `is_admin` TINYINT(1) NULL DEFAULT NULL,
-  `phone` VARCHAR(45) NULL DEFAULT NULL,
-  `mobile_phone` VARCHAR(45) NULL DEFAULT NULL,
-  `note` VARCHAR(300) NULL DEFAULT NULL,
-  `delete` TINYINT(1) NULL DEFAULT NULL,
-  `image` BINARY(100) NULL DEFAULT NULL,
-  `url` VARCHAR(100) NULL DEFAULT NULL,
-  `languge_id` INT(11) NOT NULL,
-  PRIMARY KEY (`id`) ,
-  INDEX `fk_user_languge1_idx` (`languge_id` ASC) ,
-  CONSTRAINT `fk_user_languge1`
-    FOREIGN KEY (`languge_id`)
-    REFERENCES `crius`.`languge` (`id`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION)
-ENGINE = InnoDB
-DEFAULT CHARACTER SET = utf8;
-
-
--- -----------------------------------------------------
--- Table `crius`.`value_rule`
--- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `crius`.`value_rule` (
-  `id` INT(11) NOT NULL AUTO_INCREMENT,
-  `rule_create` TINYINT(1) NULL DEFAULT NULL,
-  `rule_read` TINYINT(1) NULL DEFAULT NULL,
-  `rule_delete` TINYINT(1) NULL DEFAULT NULL,
-  `rule_change` TINYINT(1) NULL DEFAULT NULL,
-  `rule_export` TINYINT(1) NULL DEFAULT NULL,
-  `delete` TINYINT(1) NULL DEFAULT NULL,
-  `right_id` INT(11) NOT NULL,
-  `user_id` INT(11) NOT NULL,
-  PRIMARY KEY (`id`) ,
-  INDEX `fk_value_rule_right1_idx` (`right_id` ASC) ,
-  INDEX `fk_value_rule_user1_idx` (`user_id` ASC) ,
-  CONSTRAINT `fk_value_rule_right1`
-    FOREIGN KEY (`right_id`)
-    REFERENCES `crius`.`right` (`id`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION,
-  CONSTRAINT `fk_value_rule_user1`
-    FOREIGN KEY (`user_id`)
-    REFERENCES `crius`.`user` (`id`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION)
-ENGINE = InnoDB
-DEFAULT CHARACTER SET = utf8;
-
-
--- -----------------------------------------------------
--- Table `crius`.`visit_history`
--- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `crius`.`visit_history` (
-  `id` INT(11) NOT NULL AUTO_INCREMENT,
-  `date_create` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-  `ip_address` VARCHAR(45) NULL DEFAULT NULL,
-  `browser` VARCHAR(45) NULL DEFAULT NULL,
-  `delete` TINYINT(1) NULL DEFAULT NULL,
-  `user_id` INT(11) NOT NULL,
-  PRIMARY KEY (`id`) ,
-  INDEX `fk_visit_history_user1_idx` (`user_id` ASC) ,
-  CONSTRAINT `fk_visit_history_user1`
-    FOREIGN KEY (`user_id`)
-    REFERENCES `crius`.`user` (`id`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION)
-ENGINE = InnoDB
-DEFAULT CHARACTER SET = utf8;
-
-
-SET SQL_MODE=@OLD_SQL_MODE;
-SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
-SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
+<!DOCTYPE html>
+ <html>
+ <head>
+     <meta charset="UTF-8">
+     <link rel="stylesheet" href="css/style.css">
+     <title>My page</title>
+ </head>
+ <body class="bg">
+ <div class="block">
+     <h1><br>
+         Жуков Артем Игоревич
+     </h1>
+     <div class="img">
+         <img src="img/photo.jpeg" alt="my photo" height="170" width="150">
+     </div>
+     <p>Снова студент</p>
+     <hr>
+     <p>Хочу учить фронтенд, потому что:</p>
+     <ul>
+     <li>Познакомиться с интересными людьми</li>
+     <li>Посмотреть мир</li>
+     <li>Фронтенд это интересно!!! </li>
+     </ul>
+     <hr>
+     <p>Мой контактный телефон<br>
+     +380957414258</p>
+     <p>Мой профиль в контакте<br>
+         <a href="https://vk.com/artem_i_zhukov">vk.com</a>
+         </p>
+     <hr>
+     <p>Мой фидбек:<br>
+         Не ленитесь! Да прибудет с Вами сила
+     </p>
+     </div>
+ </body>
+ </html>
