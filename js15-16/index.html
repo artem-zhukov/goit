@@ -1,0 +1,35 @@
+
+<html>
+ <head>
+  <title>My Google Search</title>
+  <link href="http://www.google.com/uds/css/gsearch.css"
+        type="text/css" rel="stylesheet" />
+  <script
+        src="http://www.google.com/uds/api?file=uds.js&v=1.0&key=YABQIAAAACKQaiZJrS0bhr9YARgDqUxQBCBLUIYB7IF2WaNrkYqF0tBovNBQFDtM_KNtb3xQxWff2mI5hipc3lg"
+        type="text/javascript"> </script>
+  <script language="Javascript" type="text/javascript">
+    function OnLoad() {
+      // Создаем элемент управления для запуска поиска Google
+      var searchControl = new GSearchControl();
+
+      // Определяем, что появляется в результатах поиска
+      var localSearch = new GlocalSearch();
+      searchControl.addSearcher(localSearch);
+      searchControl.addSearcher(new GwebSearch());
+      searchControl.addSearcher(new GvideoSearch());
+      searchControl.addSearcher(new GblogSearch());
+
+      // Указываем ваше местоположение,
+      //чтобы установить исходную точку поиска
+      localSearch.setCenterPoint("Dallas, TX");
+
+      // "Рисуем" HTML-форму для элемента
+      searchControl.draw(document.getElementById("searchcontrol"));
+    }
+  </script>
+ </head>
+
+ <body onload="OnLoad()">
+  <div id="searchcontrol" />
+ </body>
+</html>
