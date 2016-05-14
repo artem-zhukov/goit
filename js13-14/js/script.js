@@ -1,5 +1,7 @@
 'use strict;'
 
+var listQuestions, modalMsg;
+
 var testForm = {
 
   testBody: document.body,
@@ -11,14 +13,9 @@ var testForm = {
   qCounter: 0,
 
   createTest: function(tName, btnName) {
-
     this.testForm.classList.add('test');
     this.testName.classList.add('test__name');
     this.testName.innerHTML = tName;
-    this.testBtn.classList.add('test__submit');
-    this.testBtn.setAttribute('type', 'submit');
-    this.testBtn.setAttribute('id', 'checkAnswr');
-    this.testBtn.innerHTML = btnName;
 
     this.testBody.appendChild(this.testForm);
     this.testForm.appendChild(this.testHead);
@@ -26,179 +23,109 @@ var testForm = {
     this.testForm.appendChild(this.testBtn);
     this.testName.style.textAlign='center';
 
-  //  console.log('added <h1> instanse', this.testForm);
+    this.testBtn.classList.add('test__submit');
+    this.testBtn.setAttribute('type', 'submit');
+    this.testBtn.setAttribute('id', 'checkAnswr');
+    this.testBtn.style.position = 'relative';
+    this.testBtn.style.top = '400px';
+    this.testBtn.innerHTML = btnName;
   },
 
-
+  //Модальное окно
   creatTestModalWnd: function() {
-    var modalDiv = document.createElement('div');
+    var modalWrapper = document.createElement('div');
+    var modalMsgWrap = document.createElement('div');
+    modalMsg = document.createElement('span');
     var modalBut = document.createElement('button');
     modalBut.setAttribute('type', 'submit');
-    modalDiv.classList.add('modal_form');
+    modalWrapper.classList.add('modal_form');
     modalBut.setAttribute('id', 'closeModalWin');
-    modalDiv.appendChild(modalBut);
+    modalMsgWrap.appendChild(modalMsg);
+    modalWrapper.appendChild(modalMsgWrap);
+    modalWrapper.appendChild(modalBut);
 
-    modalDiv.setAttribute('id', 'modal_form');
-    modalDiv.style.width='300px';
-    modalDiv.style.height='300px';
-    modalDiv.style.border = '3px #000 solid';
-    modalDiv.style.display='none';
-    modalDiv.style.index='5';
-    modalDiv.style.position= 'absolute';
-    modalDiv.style.opacity='1';
-    modalDiv.style.background='#fff';
-    modalDiv.style.left='45%';
-    modalDiv.style.textAlign='center';
+    modalWrapper.setAttribute('id', 'modal_form');
+    modalWrapper.style.width='300px';
+    modalWrapper.style.height='150px';
+    modalWrapper.style.border = '3px #000 solid';
+    modalWrapper.style.display='none';
+    modalWrapper.style.index='5';
+    modalWrapper.style.position= 'absolute';
+    modalWrapper.style.opacity='1';
+    modalWrapper.style.background='#fff';
+    modalWrapper.style.left='45%';
+    modalWrapper.style.textAlign='center';
+
+    modalMsgWrap.style.marginTop = '50px';
 
     modalBut.style.width='100px';
     modalBut.style.height='40px';
-    modalBut.style.marginTop='230px';
+    modalBut.style.marginTop='35px';
     modalBut.innerHTML = 'Close';
-    this.testBody.appendChild(modalDiv);
-  },
-
-  createTestQuestion: function(qName, answersArray) {
-
-    var questionBody = document.createElement('figure');
-    var questionHead = document.createElement('header');
-    var questionName = document.createElement('h2');
-    var questionAnswerRadio;
-    var questionAnswerLabel;
-
-    questionBody.classList.add('question')
-    questionName.classList.add('question__title')
-    questionName.innerHTML = qName;
-
-    questionBody.appendChild(questionHead);
-    questionHead.appendChild(questionName);
-
-    if(this.qCounter%4==0){
-      this.rCounter++;
-    }
-
-    this.qCounter++;
-
-    questionBody.style.marginLeft='100px';
-
-    for (var i = 0; i < answersArray.length; i++) {
-
-      var labelText = document.createTextNode(answersArray[i]);
-      questionAnswerLabel =  document.createElement('label');
-      questionAnswerRadio =  document.createElement('input');
-      questionAnswerRadio.classList.add('answer__radio');
-      questionAnswerLabel.classList.add('answer__title');
-      questionAnswerRadio.setAttribute('type', 'radio');
-
-      questionAnswerRadio.setAttribute('name', 'radio'+this.rCounter);
-
-      questionAnswerRadio.setAttribute('id', ('q-'+this.qCounter+'-answer-'+(i+1)) );
-
-      questionBody.appendChild(questionAnswerLabel);
-      questionAnswerLabel.appendChild(questionAnswerRadio);
-      questionAnswerLabel.innerHTML=questionAnswerLabel.innerHTML+answersArray[i]+'<br>';
-      questionAnswerLabel.style.marginLeft='20px';
-
-
-    }
-    this.testForm.insertBefore(questionBody, this.testBtn);
-    this.testBtn.style.margin='0 575px';
-    this.testBtn.style.height='50px';
-    this.testBtn.style.width='250px';
-
-
+    this.testBody.appendChild(modalWrapper);
   }
 }
-$(function() {
 
+$(function() {
 var html = $('#page').html();
 
-var listQuestions = {
-  question1: {
+listQuestions = [
+    {
     question:'1. Вопрос №1',
-    answer1: {
-      answer:"Вариант ответа №1",
-      check: 1
+    answers : ["Вариант ответа №1",
+              "Вариант ответа №2",
+               "Вариант ответа №3"],
+    correctAnswer: [1,0,0]
     },
-    answer2: {
-      answer:"Вариант ответа №2",
-      check: 0
-    },
-    answer3: {
-      answer:"Вариант ответа №3",
-      check: 0
-    }
+  {
+    question:'2. Вопрос №2',
+    answers : ["Вариант ответа №1",
+              "Вариант ответа №2",
+              "Вариант ответа №3"],
+              correctAnswer: [0,1,0]
+            },
+  {
+  question:'3. Вопрос №3',
+  answers : ["Вариант ответа №1",
+            "Вариант ответа №2",
+             "Вариант ответа №3"],
+  correctAnswer: [0,0,1]
   }
-}
-
-  var content = tmpl(html, listQuestions);
+]
+  var content = tmpl(html, {listQuestions:listQuestions});
   $('body').append(content);
-
 });
 
-  //
-  // },
-  // question2:{
-  //   question:'2. Вопрос №2',
-  //   ask1:"Вариант ответа №1",
-  //   ask2:"Вариант ответа №2",
-  //   ask3:"Вариант ответа №3"
-  // },
-  // question3: {
-  //   question:'3. Вопрос №3',
-  //   ask1:"Вариант ответа №1",
-  //   ask2:"Вариант ответа №2",
-  //   ask3:"Вариант ответа №3"
-  // }
-//}
 
-// var listQuestions = {
-//   question1: {
-//     question:'1. Вопрос №1',
-//     ask1:"Вариант ответа №1",
-//     ask2:"Вариант ответа №2",
-//     ask3:"Вариант ответа №3"
-//   },
-//   question2:{
-//     question:'2. Вопрос №2',
-//     ask1:"Вариант ответа №1",
-//     ask2:"Вариант ответа №2",
-//     ask3:"Вариант ответа №3"
-//   },
-//   question3: {
-//     question:'3. Вопрос №3',
-//     ask1:"Вариант ответа №1",
-//     ask2:"Вариант ответа №2",
-//     ask3:"Вариант ответа №3"
-//   }
-// }
+testForm.createTest('Тест по программированию', 'Проверить мои результаты');
 
-// testForm.createTest('Тест по программированию', 'Проверить мои результаты');
-// testForm.creatTestModalWnd();
-// var size = Object.keys(listQuestions).length;
-// for(var i = 1; i<=size; i++){
-//   var question = "question"+i;
-//   testForm.createTestQuestion(listQuestions[question].question,  [] );
-//     for(var y = 1; y <Object.keys(listQuestions[question]).length; y++){
-//       var ask = "ask"+y;
-//       testForm.createTestQuestion(" ",  [listQuestions[question][ask]] );
-//     }
-// }
+testForm.creatTestModalWnd();
 
-
+  //Проверка результата
   $('#checkAnswr').click(function(event){
     event.preventDefault();
     $('#modal_form').css('display','block').animate({opacity: 1, top: '30%'}, 400);
+    $ (function () {
+    var result = 0;
+    for (var i =0; i<listQuestions.length; i++){
+    var inp = document.getElementsByName('rb'+i);
+    for (var y = 0; y < inp.length; y++) {
+        if (inp[y].type == "radio" && inp[y].checked) {
+            result += Number(inp[y].value);
+          }
+        }
+      }
+      if (inp.length == result) {
+        modalMsg.innerHTML = 'Тест сдан!';
+      }else {
+        modalMsg.innerHTML = 'Тест не сдан!';
+      }
+    }
+  );
+});
 
-  });
-
+//Закрыть модальное окно
   $('#closeModalWin').click(function(event){
     $('#modal_form').css('display','none');
     location.reload()
   });
-
-
-//});
-//  modalSpan: document.createElement('span'),
-
-  // this.modalDiv.classList.add('modal_form');
-  // this.testBody.appendChild(this.modalDiv);

@@ -15,7 +15,7 @@
       </div>
     </script>
     <script type="text/template" id="list-template">
-      <table>
+      <table> 
 
       <% for (var i = 0; i < data.length; i++) { %>
       <li style="font-size:30px" id=<%=i%>> <%=data[i]%> <span data-value="<%=data[i]%>" class="item-delete"><img src="img/delete.png" alt="delete"/></span>
@@ -23,7 +23,7 @@
       <% }; %>
 
         </table>
+        <script data-main="js/app" src="js/require.js"></script>
     </script>
   </body>
-  <script data-main="js/app" src="js/require.js"></script>
 </html>

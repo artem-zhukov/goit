@@ -4,17 +4,18 @@
       <meta charset="utf-8">
       <title>TEST</title>
       <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-      <script src="js/tmpl.js"></script>
     </head>
     <body>
-      <script src="js/script.js"></script>
-
       <script type="text/template" id="page">
-      <% for(var i = 0; i<listQuestions.length;i++) { %>
-        <% for(var y =1; y<listQuestions.question1.length; y++) { %>
-          <p><%=listQuestions.question1.answer[y]%></p>
+       <% for(var i = 0; i<listQuestions.length; i++) { %>
+            <p><%=listQuestions[i].question%></p>
+        <% for (var y =0; y<listQuestions[i].answers.length; y++) { %>
+          <input type="radio" name='rb<%=i%>' value="<%=listQuestions[i].correctAnswer[y]%>"><%=listQuestions[i].answers[y]%><br />
           <% }; %>
-      <% }; %>
+          <br />
+       <% }; %>
       </script>
+      <script src="js/tmpl.js"></script>
+      <script src="js/script.js"></script>
     </body>
   </html>
