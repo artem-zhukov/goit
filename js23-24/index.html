@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Document</title>
+  </head>
+  <body>
+    <script type="text/template" id="wrapper-template">
+      <div class="wrapper">
+        <ul id="list-wrapper" class="item-list"></ul>
+        <div class="controlls">
+          <input type="text" class="item-value">
+          <button class="item-add">Add</button>
+        </div>
+      </div>
+    </script>
+    <script type="text/template" id="list-template">
+      <table>
+
+      <% for (var i = 0; i < data.length; i++) { %>
+      <li style="font-size:30px" id=<%=i%>> <%=data[i]%> <span data-value="<%=data[i]%>" class="item-delete"><img src="img/delete.png" alt="delete"/></span>
+            <span data-value="<%=i%>" class="item-edit"><img src="img/edit.png" alt="edit"/></span></li>
+      <% }; %>
+
+        </table>
+    </script>
+  </body>
+  <script data-main="js/app" src="js/require.js"></script>
+</html>
