@@ -3,28 +3,32 @@
   <head>
     <meta charset="utf-8">
     <title>Template</title>
+    <link rel="stylesheet" href="css/styleTmpl.css">
     <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
     <script src="js/tmpl.js"></script>
-
+    <script src="js/tmplScript.js"></script>
   </head>
   <body>
-    <script type="text/template" id="page">
-      <!-- <h1><%= name%></h1>
-      <p><%= about%></p>
-      <hr>
-      <p><%= cause%></p> -->
-      <!-- <ul>
-        <% for (var i=0; i< cause.length; i++) {%>
-        <li><%= cause[i].item %></li>
-        <% } %>
-      </ul> -->
+      <script type="text/template" id="page">
+        <h1><%= data.name%></h1>
+        <img src= <%=data.photo%> height="170" width="150"> 
+        <p><%= data.about%></p>
+        <hr>
+        <p><%= data.mainCause%></p>
 
-        <% for (var i=0; i< cause.length; i++) { %>
-        <p><%=cause[i].item%></p>
+        <% for (var i=0; i< data.causes.length; i++) { %>
+        <p><%= data.causes[i].item %></p>
         <% }; %>
+        <hr>
 
-    </script>
+        <% for (var i=0; i< data.contacts.length; i++) { %>
+        <p><%= data.contacts[i].item %></p>
+        <% }; %>
+        <hr>
 
+        <% for (var i=0; i< data.motto.length; i++) { %>
+        <p><%= data.motto[i].item %></p>
+        <% }; %>
+      </script>
   </body>
-    <script src="js/tmplScript.js"></script>
 </html>
