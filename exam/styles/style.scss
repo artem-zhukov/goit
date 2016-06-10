@@ -407,14 +407,14 @@ footer figure span{
   margin-bottom: 7px;
 }
 
-@media (min-width: 321px) {
+@media screen and (min-width: 321px) {
   .login{
     text-align: center;
     }
   }
 
 
- @media screen and (min-width: 768px) {
+ @media screen and (min-width: 768px)  {
   //  body{
   //    width: 768px;
   //  }
@@ -814,7 +814,7 @@ footer figure span{
 
 
 
- @media (min-width: 1440px) {
+ @media screen and (min-width: 1440px) {
 
   //  body{
   //    width: 1440px;
@@ -919,11 +919,12 @@ footer figure span{
    }
 
    .searchForm input{
-     margin-left: 515px;
+     margin-left: 514px;
+     width: 225px;
    }
 
    .search button {
-    margin: 40px 515px 0 0;
+    margin: 40px 499px 0 0;
    }
 
    /*==========================  FOOTER   ===============================*/

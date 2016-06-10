@@ -331,7 +331,7 @@ footer figure span {
   margin-top: 14px;
   margin-bottom: 7px; }
 
-@media (min-width: 321px) {
+@media screen and (min-width: 321px) {
   .login {
     text-align: center; } }
 @media screen and (min-width: 768px) {
@@ -604,7 +604,7 @@ footer figure span {
     float: right;
     margin: -31px -11px 0px 0;
     width: 212px; } }
-@media (min-width: 1440px) {
+@media screen and (min-width: 1440px) {
   /*================  HEADER  =====================*/
   header .wrapper {
     max-width: auto; }
