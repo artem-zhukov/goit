@@ -36,10 +36,13 @@ function defaultImage() {
 }
 
 $(function () {
-  $(".ideas").masonry({
-    itemSelector:'.fstPic',
-    columnWidth: 1,
-    stamp:'article'
+  var $ideas = $(".ideas").masonry({
+     itemSelector:'.fstPic',
+     columnWidth: 3,
+     stamp:'article'
+  });
+    $ideas.imagesLoaded( function() {
+      $ideas.masonry();
   });
 });
 
@@ -49,8 +52,23 @@ $(function () {
 });
 
 
-  $(function () {
-        $('.wrapper--content').flexslider({
-            animation: 'fade',
-        });
-    });
+$(function(){
+  $('.bxslider').bxSlider({
+    mode: 'fade',
+  });
+});
+
+
+
+$(function() {
+     $(".searchForm").keydown(function(e) {
+          if (e.keyCode == 13) {
+            SendPost();
+            return false;
+          }
+     });
+
+     function getChar(e) {
+       console.log(e);
+     }
+});

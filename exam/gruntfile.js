@@ -6,9 +6,9 @@ module.exports = function(grunt) {
             dist: {
               files: [{
                 expand: true,
-                cwd: 'styles',
+                cwd: 'style',
                 src: ['*.scss'],
-                dest: 'styles',
+                dest: 'style',
                 ext: '.css'
               }]
             }
@@ -16,7 +16,7 @@ module.exports = function(grunt) {
           watch: {
             sass: {
               // We watch and compile sass files as normal but don't live reload here
-              files: ['styles/*.scss'],
+              files: ['style/*.scss'],
               tasks: ['sass']
             }
           }

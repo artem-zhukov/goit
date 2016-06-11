@@ -4,24 +4,18 @@
     <meta charset="utf-8">
     <title>URLAUBSGLÜCK</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/reset.css">
-    <link rel="stylesheet" href="styles/style.css">
-    <!-- <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script> -->
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
-
+    <!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script> -->
+    <script src="script/jquery.js"></script>
+    <script type="text/javascript" src="script/jquery.bxslider.js"></script>
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/style.css">
     <script type="text/javascript" src="script/script.js"></script>
-    <script type="text/javascript" src="script/masonry.pkgd.min.js"></script>
-    <script type="text/javascript" src="script/jquery.flexslider-min.js"></script>
+    <script type="text/javascript" src="script/masonry.pkgd.min-ie.js"></script>
+    <!-- <script type="text/javascript" src="script/jquery.flexslider-min.js"></script> -->
+        <!-- <script type="text/javascript" src="script/sss.min.js" media="all"></script> -->
+    <script src="https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
-    <script type="text/javascript" src="script/respond.min.js"></script>
-    <!--[if (lte IE 8)]>
-      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-      <noscript><link rel="stylesheet" href="[fallback css]" /></noscript>
-      <script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-      <script type="text/javascript" src="script/css3-mediaqueries.js"></script>
 
-    <![endif]-->
-    <!-- <link rel="stylesheet" href="styles/style-ie.css"> -->
     <link href='https://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
@@ -52,11 +46,18 @@
       <article>How Urlaubsglück works?</article>
       <div class="wrapper--content">
         <img id="smallPicWork" src="img/step1small.png" alt="picture" />
-        <ul class="slides">
+         <ul class="bxslider">
           <li><img id="bigPicWork" src="img/step1.jpg" alt="picture" /></li>
           <li><img id="bigPicWork" src="img/step2.jpg" alt="picture" /></li>
           <li><img id="bigPicWork" src="img/step3.jpg" alt="picture" /></li>
         </ul>
+          <div class="bx-wrapper">
+          <div class="bx-viewport"></div>
+          <div class="bx-controls-direction">
+            <a class="bx-prev" href="">Prev</a>
+            <a class="bx-next" href="">Next</a>
+          </div>
+        </div>
           <div id="fstDesc" class="content--description">
             <a href="#">STEP 1</a>
             <h2>Sed leo enim, condimentum</h2>
@@ -65,7 +66,7 @@
       </div>
       <div  class="wrapper--content">
         <img id="smallPicWork" src="img/step2small.png" alt="picture" />
-        <ul class="slides">
+        <ul class="bxslider">
           <li><img id="bigPicWork" src="img/step2.jpg" alt="picture" /></li>
           <li><img id="bigPicWork" src="img/step1.jpg" alt="picture" /></li>
           <li><img id="bigPicWork" src="img/step3.jpg" alt="picture" /></li>
@@ -78,7 +79,7 @@
       </div>
       <div class="wrapper--content">
         <img id="smallPicWork" src="img/step3small.png" alt="picture" />
-        <ul class="slides">
+        <ul class="bxslider">
           <li><img id="bigPicWork" src="img/step3.jpg" alt="picture" /></li>
           <li><img id="bigPicWork" src="img/step2.jpg" alt="picture" /></li>
           <li><img id="bigPicWork" src="img/step1.jpg" alt="picture" /></li>
@@ -125,8 +126,8 @@
 
     <div class="ideas">
         <article>Discover holiday activity ideas</article>
-          <div id="Pic1" class="fstPic">
-            <h1 id="h11"></h1>
+        <div id="Pic1" class="fstPic">
+          <h1 id="h11"></h1>
         </div>
         <div id="Pic2" class="fstPic">
           <h1 id="h12"></h1>
@@ -152,10 +153,9 @@
       <div class="wrapper">
         <article>Discover holiday activity ideas</article>
         <h1>Hi! What are your holiday interests?</h1>
-        <form class="searchForm" action="index.html" method="post">
+        <form id="searchForm" class="searchForm" action="index.html" method="post">
           <input id="inputSearchForm" class="text" type="text" name="interest" placeholder="Enter your interests"/>
         </form>
-        <!-- <a href="#">Search partners</a> -->
         <button id="button" type="button" name="button" onclick="SendPost()">Search partners</button>
       </div>
     </div>
@@ -177,8 +177,17 @@
         </figure>
       </div>
     </footer>
-    <script src="https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
+
     <script type="text/javascript" src="script/jquery-imagefill.js"></script>
+
+    <!--[if (lte IE 8)]>
+    <script type="text/javascript" src="script/css3-mediaqueries.js"></script>
+    <script type="text/javascript" src="script/respond.min.js"></script>
+      <link rel="stylesheet" href="style/style-ie8.css">
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+      <noscript><link rel="stylesheet" href="[fallback css]" /></noscript>
+
+    <![endif]-->
 
   </body>
 
