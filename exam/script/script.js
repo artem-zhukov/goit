@@ -47,9 +47,9 @@ $(function () {
 });
 
 
-$(function () {
-  $('.fstPic').imagefill({target:'.background-image'});
-});
+
+
+
 
 
 $(function(){

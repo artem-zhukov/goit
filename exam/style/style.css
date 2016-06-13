@@ -275,7 +275,8 @@ header section span {
   margin: 10px auto;
   height: 41px;
   background-color: #ff4e50;
-  line-height: 40px; }
+  line-height: 40px;
+  cursor: pointer; }
 
 .searchForm input {
   font: 14px "Roboto", Arial, sans-serif;

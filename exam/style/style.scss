@@ -274,8 +274,9 @@ $RobLigFont: 'Roboto', Arial, sans-serif;
   height: 121px;
   margin: 8px auto;
   display: flex;
-
 }
+
+
 
 .ideas h1{
   font: 22px $MonBoldFont;
@@ -341,6 +342,7 @@ $RobLigFont: 'Roboto', Arial, sans-serif;
   height: 41px;
   background-color: #ff4e50;
   line-height: 40px;
+  cursor: pointer;
 }
 
 .searchForm input{
