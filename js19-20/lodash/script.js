@@ -274,22 +274,34 @@ var data = [
   }
 ]
 
-data = JSON.stringify(data);
+var str = JSON.stringify(data);
+var obj = JSON.parse(str);
 
-var res = JSON.parse(data);
+console.log('data: ', data);
 
-console.log(res);
+/* 1. Массив скиллов (поле skills) всех людей, не должно быть повторяющихся скиллов, так же они должны быть отсортированы по алфавиту;*/
 
-var ports = [];
+var skills = _.uniq(_.flatMap(data, function(el, i, data) {
+  return el.skills;
+}));
+var sortedSkills = _.sortBy(skills, function(item) {
+  return item.toLowerCase();
+});
+console.log('Массив скиллов всех людей:', sortedSkills);
 
+/* 2. Массив имен (поле name) людей, отсортированных в зависимости от количества их друзей (friends);*/
 
-_.each(res, function(val) {
-  ports.push(val.skills);
+var sortedFriends = _.sortBy(data, function(item) {
+  return item.friends.length;
 });
 
-ports = _.union(ports[0],ports[1],ports[2],ports[3],ports[4],ports[5],ports[6]);
+var names = _.flatMap(sortedFriends, function(el, i, data) {
+  return el.name;
+});
+console.log('Массив имен людей, отсортированных в зависимости от количества их друзей:', names);
 
+/* 3. Массив всех друзей всех пользователей, не должно быть повторяющихся людей*/
 
-
-
-console.log(ports);
+var friendsArr = _.flattenDeep(_.map(data, 'friends'));
+var friends = _.uniq(_.map(friendsArr, 'name'));
+console.log('Массив всех друзей всех пользователей:', friends);
