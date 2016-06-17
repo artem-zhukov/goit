@@ -6,9 +6,9 @@ module.exports = function(grunt) {
             dist: {
               files: [{
                 expand: true,
-                cwd: 'style',
+                cwd: 'style/scss',
                 src: ['*.scss'],
-                dest: 'style',
+                dest: 'style/css',
                 ext: '.css'
               }]
             }
@@ -19,11 +19,29 @@ module.exports = function(grunt) {
               files: ['style/*.scss'],
               tasks: ['sass']
             }
+          },
+          concat_css:{
+            options:{
+
+            },
+            all:{
+              src:['style/css/style.css', 'style/css/style768.css', 'style/css/style960.css'],
+              dest:'style/css/mainstyle.css'
+            }
+          },
+          uglify: {
+            build: {
+                src: 'script/script.js',
+                dest: 'script/script.min.js',
+                src: 'script/scriptIE.js',
+                dest: 'script/scriptIE.min.js',
           }
+        }
     });
 
     grunt.loadNpmTasks('grunt-contrib-sass');
-    grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-concat-css');
+    grunt.loadNpmTasks('grunt-contrib-uglify');
 
-    grunt.registerTask('default', ['sass', 'watch']);
+    grunt.registerTask('default', ['sass','concat_css', 'uglify']);
 };
