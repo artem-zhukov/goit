@@ -1,6 +1,6 @@
 requirejs.config({
 paths:{
-  'jquery': 'https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js',
+  'jquery': 'https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery',
   'tmpl':'tmpl',
   'Model': 'Model',
   'View':'View',
@@ -35,6 +35,7 @@ require(
       var model = new Model(firstToDoList);
       var view = new View(model);
       var controller = new Controller(model, view);
-    })
+    });
+
   }
 );
