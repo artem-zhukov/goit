@@ -1,6 +1,6 @@
-// checkName();
+checkName();
 var querty = prompt('Введите число и степень ч/з зяпятую');
-pow();
+ pow();
 
 function pow(){
 var numArray = querty.split(',');

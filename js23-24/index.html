@@ -3,8 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script src="js/tmpl.js"></script>
+    <script src="js/script.js"></script>
   </head>
   <body>
+
     <script type="text/template" id="wrapper-template">
       <div class="wrapper">
         <ul id="list-wrapper" class="item-list"></ul>
@@ -15,7 +19,7 @@
       </div>
     </script>
     <script type="text/template" id="list-template">
-      <table> 
+      <table>
 
       <% for (var i = 0; i < data.length; i++) { %>
       <li style="font-size:30px" id=<%=i%>> <%=data[i]%> <span data-value="<%=data[i]%>" class="item-delete"><img src="img/delete.png" alt="delete"/></span>
@@ -24,6 +28,7 @@
 
         </table>
         <script data-main="js/app" src="js/require.js"></script>
+
     </script>
   </body>
 </html>

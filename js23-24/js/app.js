@@ -1,10 +1,10 @@
 requirejs.config({
 paths:{
-  'jquery': 'https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery',
+  'jquery': 'https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js',
   'tmpl':'tmpl',
-  'modelScript': 'modelScript',
-  'veiwScript':'viewScript',
-  'controllerScript':'controllerScript'
+  'Model': 'Model',
+  'View':'View',
+  'Controller':'Controller'
 },
 shim:{
   'tmpl':{
@@ -13,23 +13,23 @@ shim:{
   'jquery':{
     exports: 'jQuery'
   },
-  'modelScript':{
+  'Model':{
 
   },
-  'veiwScript':{
+  'View':{
 
   },
-  'controllerScript':{
+  'Controller':{
     deps:[],
-    exports: 'controllerScript'
+    exports: 'Controller'
   }
 }
 });
 
 
 require(
-  ['jquery','tmpl','modelScript', 'viewScript', 'controllerScript'],
-  function ($,tmpl, modelScript, viewScript, controllerScript) {
+  ['jquery','tmpl','Model', 'View', 'Controller'],
+  function ($,tmpl, Model, View, Controller) {
     $(function () {
       var firstToDoList = ['test1', 'test2', 'test3'];
       var model = new Model(firstToDoList);
